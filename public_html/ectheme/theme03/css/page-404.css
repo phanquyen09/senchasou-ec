@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/*
+  File Name   : not-found.css
+  Description : コンテンツエリア関係 他
+*/
+
+
+
+/* 404 NOT FOUND
+------------------------------------------------------------ */
+.not-found-wrap {
+  max-width: 960px;
+  height: 400px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  text-align: left;
+  padding: 50px 0 0;
+  text-align: center;
+  position: relative;
+}
+.not-found-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.not-found-wrap .title-wrap {
+  margin-bottom: 2em;
+  padding-bottom: 0;
+  /* border-bottom: solid 2px #ddd; */
+}
+.not-found-wrap .title-wrap h2 {
+  font-size: 26px;
+  margin: 0;
+}
+.not-found-wrap p.text-wrap {
+  line-height: 200%;
+  font-size: 16px;
+}
+.not-found-wrap .btn {
+  padding: 40px 0 0;
+}
+.not-found-wrap .btn a {
+  text-decoration: none;
+  color: #0084b2;
+  width: 280px;
+  display: block;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+.not-found-wrap .btn a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 811px) {
+  .not-found-wrap {
+      padding: 0 3.125%;
+  }
+  .not-found-wrap .title-wrap h2 {
+    font-size: 18px;
+  }
+  .not-found-wrap p.text-wrap br {
+    display: none;
+  }
+  .not-found-wrap p.text-wrap {
+    font-size: 14px;
+  }
+}
+
+

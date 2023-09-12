@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*
+  File Name   : import.css
+  Description : 各CSSファイルの読み込み
+*/
+
+/* base styles
+============================================================ */
+
+@import 'module/_default.scss';
+@import 'module/_module.scss';
+@import 'module/_layout.scss';
+@import 'module/_common.scss';
+@import 'module/_reason.scss';

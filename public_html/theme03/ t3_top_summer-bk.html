@@ -1,0 +1,660 @@
+<div class="tygh-content clearfix">
+  <div class="container-fluid content-grid section-event-bg">
+    <div class="row-fluid cs-mgb-60">
+      <div class="span12 main-banner_wrapper">
+        <div class="mb40 mt20">
+          <ul class="mod-panel-layout btn-wrap cs-button-banner js-lineup">
+            <{if $members_use_flg}>
+              <{if !$members_login_flg}>
+                <{if $members_register_flg}>
+                  <li class="cs-button">
+                    <a class="cv_btn color-01 icon-edit" href="<{$members_regi_url}>"><span>新規会員登録</span></a>
+                  </li>
+                <{ /if}>
+              <{else}>
+                <li class="cs-button">
+                  <a href="<{$view_myaccount_url}>" class="cv_btn color-02">
+                    <span>マイアカウント</span>
+                  </a>
+                </li>
+                <li class="cs-button"><a class="cv_btn color-03" href="<{$members_login_url}>"><span>ログアウト</span></a></li>
+              <{ /if}>
+            <{ /if}>
+            <li class="cs-banner">
+              <a href="https://chacha-senchasou.com/" target="_blank">
+                <span class="logo"><img src="https://cloud.senchasou.online/ectheme/theme03/img/top/chacha-logo.png" alt="CHACHA千茶荘公式サイト"></span>
+                <div class="title">
+                  <span class="text_01">C</span><span class="text_02">HA</span>
+                  <span class="text_01">C</span><span class="text_02">HA</span>
+                  <span class="text_jp">千茶荘</span>
+                </div>
+                <span class="sub_text">もっと、お茶を新しく。千茶荘の新ブランドです。</span>
+              </a>
+            </li>
+          </ul>
+          <div class="com-column-1 cs-mgt-20">
+            <a href="https://www.makuake.com/project/senchasoh/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cloud.senchasou.online/ectheme/theme03/img/top/makuake-banner.png" alt="" class="w-700">
+            </a>
+          </div>
+
+        </div>
+
+        <div class=" section-title">
+          <div class="ty-wysiwyg-content">5,400円(税込)で送料無料!</div>
+          <p style="text-align: center">※一部地域を除く</p>
+        </div>
+        <div class="title-move">
+          <div class="ty-wysiwyg-content">
+            ＼★ 今が熱い!イベントや特集! ★／</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span12 main-visual_wrapper">
+            <!-- バナー -->
+            <div class="com-section-inner">
+              <div class="com-column-1">
+                <a href="https://senchasou-online.com/?mode=grp&gid=2879757" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cloud.senchasou.online/ectheme/theme03/img/baner/chugen-bg-01.png" alt="">
+                </a>
+              </div>
+              <div class="com-column-1">
+                <a href="https://senchasou-online.com/?mode=grp&gid=2870742" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cloud.senchasou.online/ectheme/theme03/img/baner/summer-visual.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" section-title">
+          <div class="ty-wysiwyg-content">人気ランキング</div>
+        </div>
+
+        <div class="main-slider ranking-top">
+          <{section name=num loop=$seller}>
+            <div class="ranking-item clearfix hw-50-container hw-50-left-top hw-50-blocks rank-<{$smarty.section.num.index_next}>"">
+              <div class="ty-banner__image-wrapper">
+                <a href="<{$seller[num].link_url}>" target="_blank">
+                  <{if $seller[num].img_url !="" }>
+                    <img src="<{$seller[num].img_url}>" alt="<{$seller[num].name|escape:'html'}>" />
+                    <{else}>
+                    <img src="https://img.shop-pro.jp/tmpl_img/88/no-image.jpg" alt="<{$seller[num].name|escape:'html'}>" />
+                  <{ /if}>
+                </a>
+              </div>
+            </div>
+        <{ /section}>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+
+  <{section name=lineup start=1 loop=3}>
+    <{assign var="cateIndex" value=$smarty.section.lineup.index}>
+    <{if $cateIndex == 1}>
+      <{assign var="cateLink" value=section-01}>
+      <{assign var="sessionId" value=fukubukuro}>
+      <{assign var="sessionClass" value="section pdb-0 bg-beige"}>
+      <{assign var="sessionProductClass" value="section-recipe product_list"}>
+
+      <!-- product -->
+      <{assign var="min" value="1"}>
+      <{assign var="max" value="3"}>
+
+
+      <!-- text -->
+      <{assign var="cateNameJp" value="福袋"}>
+      <{assign var="cateNameEn" value="HAPPY BAG"}>
+      <{assign var="categoryDes" value="どこよりもお得お茶福袋"}>
+
+    <{else}>
+      <{assign var="cateLink" value=section-02}>
+      <{assign var="sessionId" value=tokusei}>
+      <{assign var="sessionClass" value="span12 section section-event-bg anchor_otoku"}>
+      <{assign var="sessionProductClass" value="section-gift"}>
+      <{assign var="min" value="4"}>
+      <{assign var="max" value="6"}>
+      <{assign var="cateNameJp" value="お中元<br>ギフト"}>
+      <{assign var="cateNameEn" value="GIFT"}>
+
+
+    <{/if}>
+
+    <div class="row-fluid group-01" id="<{$sessionId}>">
+      <div class="<{$sessionClass}>">
+        <div class="section-cate">
+          <div class="title-wrap">
+            <h2 class="title-main">千茶荘 ラインナップ</h2>
+          </div>
+
+          <ul class="mod-panel-layout">
+            <li class="item-1 feature <{if $cateIndex == 1}>active<{/if}>">
+              <a href="#fukubukuro>">
+                <div class="img-block">
+                  <img src="https://cloud.senchasou.online/ectheme/theme01/assets/img/cate-bg.png" alt="">
+                </div>
+                <div class="img-cover-block"></div>
+                <div class="disc-block">
+                  <p class="title-jp font-48">福袋</p>
+                  <p class="title-en">HAPPY BAG</p>
+                </div>
+                <div class="circle icon-other-arrow-parts"></div>
+              </a>
+            </li>
+            <li class="item-7 feature <{if $cateIndex == 2}>active<{/if}>">
+              <a href="#tokusei">
+                <div class="img-block">
+                  <img src="https://cloud.senchasou.online/ectheme/theme01/assets/img/cate-bg.png" alt="">
+                </div>
+                <div class="img-cover-block"></div>
+                <div class="disc-block">
+                  <p class="title-jp font-36">お中元<br>ギフト</p>
+                  <p class="title-en">GIFT</p>
+                </div>
+                <div class="icon-other-arrow-parts"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <section class="<{$sessionProductClass}>">
+          <div class="item-inner row-fluid com-cate-child-01">
+            <div class="span12 product-list-wrapper inner">
+              <div class="grid-list active js-lineup item-7 feature ">
+                <{if $recommend_num !=0 }>
+                <div class="cs-top-pl grid-list">
+                  <{assign var="cnt" value=0}>
+                  <{if $cateIndex==1 }>
+                    <div class="text-block">
+                      <h2 class="title">どこよりもお得!<br>お茶福袋</h2>
+                      <div class="com-button-default">
+                        <a href="?mode=cate&csid=0&cbid=2831980" target="_blank">一覧へ</a>
+                      </div>
+                    </div>
+
+                  <{else}>
+                    <div class="text-block cs-mgb-20">
+                      <div class="com-button-default">
+                        <a href="?mode=grp&gid=2879757" target="_blank">お中元ギフト一覧へ</a>
+                      </div>
+                    </div>
+                  <{ /if}>
+
+
+                  <{section name=num loop=$recommend}>
+                    <{if $smarty.section.num.index_next >= $min && $smarty.section.num.index_next <= $max}>
+                    <{math equation="$cnt + 1" assign="cnt"}>
+                      <div class="ty-column3 js-lineup aki-bg-05">
+                        <div class="product_list">
+                          <div class="img-block item">
+                            <a href="<{$recommend[num].link_url}>">
+                              <div class="img">
+                                <{if $recommend[num].img_url != ""}>
+                                  <img src="<{$recommend[num].img_url}>" alt="<{$recommend[num].name|escape:'html'}>" />
+                                <{else}>
+                                  <img src="https://img21.shop-pro.jp/PA01484/764/product/170622408.png" alt="" />
+                                <{/if}>
+
+                                <div class="p-price">
+                                  <{if $members_login_flg == true && $recommend[num].discount_flg == true}>
+                                    <span class="prd_lst_regular prd_lst_span"><{$recommend[num].regular_price}></span>
+                                  <{/if}>
+
+                                  <{if $recommend[num].soldout_flg == false}>
+                                    <{if $recommend[num].option_price.max != $recommend[num].option_price.min}>
+                                      <{if $recommend[num].model == "2"}>
+                                        <dl class="ty-price">
+                                          <dt>100g</dt>
+                                          <dd class="ty-price-num"><{$recommend[num].option_price.min}>&nbsp;円</dd><br>
+                                          <dt>150g</dt>
+                                          <dd class="ty-price-num"><{$recommend[num].option_price.max}>&nbsp;円</dd>
+                                        </dl>
+                                      <{/if}>
+                                    <{else}>
+                                      <dl class="ty-price">
+                                        <dd class="ty-price-num"><{$recommend[num].price}></dd>
+                                      </dl>
+
+                                      <{if $shoppoint_use_flg == "true"}>
+                                        <div class="point-display-popup">
+                                          <span class="point"><{$recommend[num].shoppoint}>ポイント</span>
+                                        </div>
+                                      <{/if}>
+                                    <{/if}>
+
+                                  <{else}>
+                                    <span class="prd_lst_soldout prd_lst_span">SOLDOUT</span>
+                                  <{/if}>
+
+                                </div>
+                                <div class="p-catch-copy">
+                                  <p><{$recommend[num].s_expl}></p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    <{/if}>
+                  <{/section}>
+
+                </div>
+                <{/if}>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  <{/section}>
+
+  <!-- 茶葉 -->
+  <{assign var="pNumMin" value=7}>
+  <!--  -->
+
+  <{section name=lineup start=4 loop=8}>
+    <{assign var="cateIndex" value=$smarty.section.lineup.index}>
+
+    <!-- 茶葉 -->
+    <{if $cateIndex == 4}>
+      <{assign var="sessionBgClass" value=""}>
+      <{assign var="sessionId" value=chaba}>
+      <{assign var="cateLink" value=section-01}>
+      <{assign var="sessionClass" value="span12 section anchor_otoku"}>
+      <{assign var="sessionProductClass" value="section-recipe product_list"}>
+      <{assign var="min" value="7"}>
+      <{assign var="max" value="9"}>
+      <{assign var="subTitle" value="茶葉"}>
+      <{assign var="itemClass" value="item-2"}>
+
+      <!-- カテゴリID -->
+      <{assign var="cbid" value="2818170" }>
+
+    <{elseif $cateIndex == 5}>
+      <{assign var="sessionBgClass" value=""}>
+      <{assign var="sessionId" value=teabag}>
+      <{assign var="cateLink" value=section-02}>
+      <{assign var="sessionClass" value="span12 section bg-stripe anchor_otoku"}>
+      <{assign var="sessionProductClass" value="section-recipe product_list"}>
+      <{assign var="subTitle" value="ティーバッグ"}>
+      <{assign var="itemClass" value="item-4"}>
+
+
+      <{assign var="cbid" value="2818168" }>
+
+    <{elseif $cateIndex == 6}>
+      <{assign var="sessionId" value=sticks}>
+      <{assign var="cateLink" value=section-02}>
+      <{assign var="sessionClass" value="span12 section anchor_otoku"}>
+      <{assign var="sessionProductClass" value="section-recipe product_list"}>
+      <{assign var="subTitle" value="スティック"}>
+      <{assign var="itemClass" value="item-5"}>
+
+      <{assign var="cbid" value="2827949" }>
+
+    <{elseif $cateIndex == 7}>
+      <{assign var="sessionId" value=powdertea}>
+      <{assign var="cateLink" value=section-02}>
+      <{assign var="sessionClass" value="span12 section bg-stripe anchor_otoku"}>
+      <{assign var="sessionProductClass" value="section-recipe product_list"}>
+      <{assign var="subTitle" value="パウダーティー"}>
+      <{assign var="itemClass" value="item-6"}>
+
+      <{assign var="cbid" value="2827952" }>
+
+    <{/if}>
+
+    <div class="row-fluid group-02 <{$sessionBgClass}>" id="<{$sessionId}>">
+      <div class="<{$sessionClass}>">
+        <div class="section-cate ">
+          <div class="title-wrap">
+            <h2 class="title-main">千茶荘 メーカー直販</h2>
+          </div>
+          <ul class="mod-panel-layout">
+            <{assign var="cnt1" value=3}>
+
+            <{section name=parentCate start=3 loop=7}>
+              <{assign var="parentCateIndex" value=$smarty.section.parentCate.index}>
+              <{math equation="$cnt1 + 1" assign="cnt1"}>
+
+              <{if $parentCateIndex == 3}>
+                <{assign var="childItemClass" value="item-2"}>
+                <{assign var="aHref" value="chaba"}>
+                <{assign var="jpName" value="茶葉"}>
+                <{assign var="enName" value="Leaf"}>
+
+
+              <{elseif $parentCateIndex == 4}>
+                <{assign var="childItemClass" value="item-4"}>
+                <{assign var="aHref" value="teabag"}>
+                <{assign var="jpName" value="ティーバッグ"}>
+                <{assign var="enName" value="Tea Bags"}>
+
+
+              <{elseif $parentCateIndex == 5}>
+                <{assign var="childItemClass" value="item-5"}>
+                <{assign var="aHref" value="sticks"}>
+                <{assign var="jpName" value="スティック"}>
+                <{assign var="enName" value="Sticks"}>
+
+
+
+              <{elseif $parentCateIndex == 6}>
+                <{assign var="childItemClass" value="item-6"}>
+                <{assign var="aHref" value="powdertea"}>
+                <{assign var="jpName" value="パウダーティー"}>
+                <{assign var="enName" value="Powder tea"}>
+
+              <{/if}>
+
+              <li class="<{$childItemClass}> feature <{if $cnt1 == $cateIndex}>active<{/if}>">
+                <a href="#<{$aHref}>">
+                  <div class="img-block">
+                    <img src="https://cloud.senchasou.online/ectheme/theme01/assets/img/cate-bg.png" alt="">
+                  </div>
+                  <div class="img-cover-block"></div>
+                  <div class="disc-block">
+                    <p class="title-jp font-24"><{$enName}></p>
+                    <p class="title-en"><{$jpName}></p>
+                  </div>
+                  <div class="icon-other-arrow-parts"></div>
+                </a>
+              </li>
+            <{/section}>
+          </ul>
+
+          <div class="<{$itemClass}> section-title">
+            <div class="sub-title"><{$subTitle}></div>
+            <p class="catch"></p>
+          </div>
+        </div>
+
+        <{if $cateIndex <= 6}>
+          <div class="item-inner <{$itemClass}> row-fluid com-cate-child-01">
+            <div class="span12 product-list-wrapper inner tab-wrapper">
+              <div class="ty-wysiwyg-content">
+                <ul class="nav nav-tabs">
+                  <{assign var="cnt2" value=0}>
+                  <{section name=childCate start=1 loop=7}>
+                    <{assign var="childCateIndex" value=$smarty.section.childCate.index}>
+                    <{math equation="$cnt2 + 1" assign="cnt2"}>
+                    <{assign var="csHide" value=""}>
+
+                    <{if $childCateIndex == 1}>
+                      <{assign var="name" value="抹茶入り煎茶"}>
+
+                    <{elseif $childCateIndex == 2}>
+                      <{assign var="name" value="煎茶"}>
+                      <{if $cateIndex==5}>
+                        <{assign var="csHide" value="cs-hide" }>
+                      <{ /if}>
+
+                    <{elseif $childCateIndex == 3}>
+                      <{assign var="name" value="ほうじ茶"}>
+
+                    <{elseif $childCateIndex == 4}>
+                      <{assign var="name" value="和ハーブ"}>
+
+                      <{if $cateIndex == 4}>
+                        <{assign var="csHide" value="cs-hide"}>
+                      <{/if}>
+
+                    <{elseif $childCateIndex == 5}>
+                      <{assign var="name" value="健康茶"}>
+                    <{elseif $childCateIndex == 6}>
+                      <{assign var="name" value="有機茶"}>
+                    <{/if}>
+
+                    <{if $cateIndex <= 5}>
+                      <li class="nav-item <{if $cnt2 == 1}>active<{/if}> <{$csHide}>">
+                        <a class="nav-link bg-primary">
+                          <p><{$name}></p>
+                        </a>
+                      </li>
+                    <{/if}>
+                  <{/section}>
+                </ul>
+              </div>
+
+              <{assign var="cnt3" value=0}>
+
+              <{section name=childCate start=1 loop=7}>
+                <{assign var="childCateIndex" value=$smarty.section.childCate.index}>
+                <{math equation="$cnt3 + 1" assign="cnt3"}>
+                <{assign var="csHide" value=""}>
+                <!-- 抹茶入り煎茶 -->
+                <{if $childCateIndex == 1}>
+                  <{if $cateIndex==4}>
+                    <{assign var="pNum" value="5" }>
+                  <{elseif $childCateIndex==5}>
+                    <{assign var="pNum" value="0" }>
+                  <{else}>
+                    <{assign var="pNum" value="3" }>
+                  <{ /if}>
+                  <!-- <{assign var="pNum" value="5"}> -->
+                  <{assign var="categoryName" value="抹茶入り煎茶"}>
+                  <{assign var="csid" value="1"}>
+
+                <!-- 煎茶 -->
+                <{elseif $childCateIndex == 2}>
+                  <{if $cateIndex == 4}>
+                    <{assign var="pNum" value="3"}>
+                  <{else}>
+                    <{assign var="pNum" value="2"}>
+                  <{/if}>
+                  <{assign var="categoryName" value="煎茶" }>
+                  <{assign var="csid" value="2" }>
+
+                <!-- ほうじ茶 -->
+                <{elseif $childCateIndex == 3}>
+                  <{assign var="pNum" value="3"}>
+                  <{assign var="categoryName" value="ほうじ茶" }>
+                  <{assign var="csid" value="3" }>
+
+
+                <!-- 和ハーブ -->
+                <{elseif $childCateIndex == 4}>
+
+                  <{if $cateIndex == 4}>
+                    <{assign var="pNum" value="3"}>
+                    <{assign var="csHide" value="cs-hide"}>
+
+                  <{else}>
+                    <{assign var="pNum" value="3"}>
+                  <{/if}>
+                  <{assign var="categoryName" value="和ハーブ" }>
+                  <{assign var="csid" value="4" }>
+                <!-- 健康茶 -->
+                <{elseif $childCateIndex == 5}>
+                  <{assign var="pNum" value="3"}>
+                  <{assign var="categoryName" value="健康茶" }>
+                  <{assign var="csid" value="5" }>
+                <!-- 有機茶 -->
+                <{elseif $childCateIndex == 6}>
+                  <{assign var="pNum" value="3"}>
+                  <{assign var="categoryName" value="有機茶" }>
+                  <{assign var="csid" value="6" }>
+                <{/if}>
+
+                <{if $pNum > 0}>
+                  <{math equation="$pNumMin + 0" assign="min"}>
+                  <{math equation="$pNumMin + $pNum" assign="max"}>
+                <{/if}>
+
+                <{if $cateIndex == 6}>
+                  <{assign var="col" value="3"}>
+                <{else}>
+                  <{math equation="$pNum" assign="col"}>
+                <{/if}>
+
+                <!-- 抹茶入り煎茶 -->
+                <{if $recommend_num !=0 && ($min >= 0 && $max >= 0)}>
+
+                  <div class="cs-top-pl grid-list <{if $cnt3 == 1}>active<{/if}> <{$csHide}> ">
+                    <{if $cateIndex != 6}>
+                      <div class="title-wrap-child">
+                        <h2 class="title-main"><{$categoryName}></h2>
+                      </div>
+                    <{ /if}>
+
+                    <div class="ranking-list js-slick-slider-ranking">
+                      <{section name=num loop=$recommend}>
+                        <{if $smarty.section.num.index_next >= $min && $smarty.section.num.index_next < $max}>
+                          <div class="ty-column<{$col}> js-lineup">
+                            <div class="product_list">
+                              <div class="item">
+                                <a href="<{$recommend[num].link_url}>">
+                                  <div class="img">
+                                    <{if $recommend[num].img_url != ""}>
+                                      <img src="<{$recommend[num].img_url}>" alt="<{$recommend[num].name|escape:'html'}>" />
+                                    <{else}>
+                                      <img src="https://img.shop-pro.jp/tmpl_img/63/prd_lst_noimage.png" alt="<{$recommend[num].name|escape:'html'}>" />
+                                    <{/if}>
+
+                                    <{if $recommend[num].model != "" && $recommend[num].model != "99"}>
+                                      <div class="sub-img sale-icon">
+                                        <div class="text-inner">
+                                          <span class="s-quantity">メール便</span>
+                                          <span class="s-ship">可能</span>
+                                        </div>
+                                      </div>
+                                    <{/if}>
+                                    <div class="p-price">
+                                      <{if $members_login_flg == true && $recommend[num].discount_flg == true}>
+                                        <span class="prd_lst_regular prd_lst_span"><{$recommend[num].regular_price}></span>
+                                      <{/if}>
+
+                                      <{if $recommend[num].soldout_flg == false}>
+                                        <{if $recommend[num].option_price.max != $recommend[num].option_price.min}>
+                                          <{if $recommend[num].model == "2"}>
+                                            <dl class="ty-price">
+                                              <dt>100g</dt>
+                                              <dd class="ty-price-num"><{$recommend[num].option_price.min}>&nbsp;円</dd><br>
+                                              <dt>150g</dt>
+                                              <dd class="ty-price-num"><{$recommend[num].option_price.max}>&nbsp;円</dd>
+                                            </dl>
+                                          <{/if}>
+                                        <{else}>
+                                          <dl class="ty-price">
+                                            <dd class="ty-price-num"><{$recommend[num].price}></dd>
+                                          </dl>
+
+                                          <{if $shoppoint_use_flg == "true"}>
+                                            <div class="point-display-popup">
+                                              <span class="point"><{$recommend[num].shoppoint}>ポイント</span>
+                                            </div>
+                                          <{/if}>
+                                        <{/if}>
+
+                                      <{else}>
+                                        <span class="prd_lst_soldout prd_lst_span">SOLDOUT</span>
+                                      <{/if}>
+
+                                    </div>
+                                    <div class="p-catch-copy">
+                                      <p><{$recommend[num].s_expl}></p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        <{/if}>
+                      <{/section}>
+                    </div>
+                    <div class="text-block">
+                      <div class="com-button-default">
+                        <a href="?mode=cate&cbid=<{$cbid}>&csid=<{$csid}>" target="_blank">
+                          <{$categoryName}>一覧へ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                <{/if}>
+
+                <{math equation="$pNumMin + $pNum" assign="pNumMin"}>
+
+              <{/section}>
+
+            </div>
+          </div>
+
+        <{elseif $cateIndex == 7}>
+          <div class="item-inner item-6 row-fluid com-cate-child-01">
+            <div class="span12 product-list-4col product-list-wrapper inner tab-wrapper">
+              <div class="ty-wysiwyg-content">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link bg-primary">
+                      <p>抹茶入り</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link bg-primary">
+                      <p>焙じ茶入り</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 抹茶入り -->
+              <div class="grid-list active cs-no-cart">
+                <{section name=chachaProduct start=1 loop=4}>
+                  <{assign var="cateIndex" value=$smarty.section.chachaProduct.index}>
+                  <{if $cateIndex == 1}>
+                    <{assign var="productId" value=169511220}>
+                  <{elseif $cateIndex == 2}>
+                    <{assign var="productId" value=169705375}>
+                  <{elseif $cateIndex == 3}>
+                    <{assign var="productId" value=169705584}>
+                  <{elseif $cateIndex == 4}>
+                    <{assign var="productId" value=169705132}>
+                  <{/if}>
+                  <div class="ty-column3 aki-bg-05">
+                    <div class="product_list">
+                      <a href="?pid=<{$productId}>" target="_blank">
+                        <script type='text/javascript'
+                          src='https://senchasou.shop-pro.jp/?mode=cartjs&pid=<{$productId}>&style=normal_gray&name=y&img=y&expl=n&stock=n&price=y&optview=n&inq=n&sk=n'
+                          charset='euc-jp'></script>
+                      </a>
+                    </div>
+                  </div>
+                <{/section}>
+              </div>
+
+              <!-- 焙じ茶入り -->
+              <div class="grid-list cs-no-cart">
+                <{section name=chachaProduct start=1 loop=4}>
+                  <{assign var="cateIndex" value=$smarty.section.chachaProduct.index}>
+                  <{if $cateIndex == 1}>
+                    <{assign var="productId" value=169705509}>
+                  <{elseif $cateIndex == 2}>
+                    <{assign var="productId" value=169705617}>
+                  <{/if}>
+
+                  <div class="ty-column3 js-lineup aki-bg-05">
+                    <div class="product_list">
+                      <a href="?pid=<{$productId}>" target="_blank">
+                        <script type='text/javascript'
+                          src='https://senchasou.shop-pro.jp/?mode=cartjs&pid=<{$productId}>&style=normal_gray&name=y&img=y&expl=n&stock=n&price=y&optview=n&inq=n&sk=n'
+                          charset='euc-jp'></script>
+                      </a>
+                    </div>
+                  </div>
+                <{/section}>
+
+              </div>
+
+            </div>
+          </div>
+        <{/if}>
+      </div>
+    </div>
+  </div>
+
+  <{/section}>
+
+</div>

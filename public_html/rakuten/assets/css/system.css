@@ -1,0 +1,13 @@
+.system-display-header.text {
+  display: block !important;
+}
+
+.system-display.system-coupon,
+.system-display-banner,
+.system-display-header.image,
+.system-display-cate,
+.system-display,
+.system-display.system-start-end {
+  display: none !important;
+}
+/*# sourceMappingURL=system.css.map */

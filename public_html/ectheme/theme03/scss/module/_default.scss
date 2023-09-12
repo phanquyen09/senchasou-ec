@@ -1,0 +1,650 @@
+@charset "utf-8";
+
+/*!
+ * This file provides to reset CSS for browsers and a lot of utility classes.
+ *
+ * @copyright (C) Fabric Arts inc.
+ * @version   1.0.0
+ */
+
+/* Universal reset
+----------------------------------------------------------- */
+/*** structure ***/
+
+
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/*** structure ***/
+
+body {
+  color: #333;
+  font-family: Shuei NijimiMGo B, dnp-shuei-mgothic-std, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-x: hidden;
+  > {
+    div:first-child, article, footer, header, main {
+      width: 100%;
+      min-width: 320px;
+      font-size: 14px;
+      font-size: 1.4rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+
+/*** hypertext ***/
+
+a {
+  &:link {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: #000;
+  }
+
+  img {
+    border: none;
+  }
+
+  &.over:hover, &:hover img.over {
+    filter: alpha(opacity = 70);
+    -moz-opacity: .7;
+    opacity: .7;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+input.over:hover {
+  filter: alpha(opacity = 70);
+  -moz-opacity: .7;
+  opacity: .7;
+}
+
+/*** text ***/
+
+p {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+  /* line-height: 1; */
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h4, h5, h6 {
+  font-size: 1em;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: Shuei NijimiMGo B, dnp-shuei-mgothic-std, sans-serif;
+  color: #019B61;
+}
+
+h3 {
+  font-family: Shuei NijimiMGo B, dnp-shuei-mgothic-std, sans-serif;
+  color: #019B61 !important;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+}
+
+
+h3 {
+  font-size: 20px;
+}
+
+h4, h5, h6 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.pdb-0 {
+  padding-bottom: 0 !important;
+}
+
+small, .font-small {
+  font-size: .75em;
+}
+
+sub {
+  vertical-align: baseline;
+  position: relative;
+  bottom: -0.2em;
+}
+
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.3em;
+}
+
+iframe {
+  border: none;
+}
+
+/*** list ***/
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+li, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+
+  &.disc {
+    list-style-type: disc;
+    margin-left: 1.6em;
+  }
+}
+
+/*** object ***/
+
+embed, object {
+  vertical-align: bottom;
+}
+
+/*** presentation ***/
+
+hr {
+  display: none;
+}
+
+u {
+  text-decoration: underline;
+}
+
+/*** edit ***/
+
+del {
+  color: #666;
+  text-decoration: line-through;
+}
+
+ins {
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+}
+
+/*** forms ***/
+
+legend {
+  white-space: normal;
+}
+
+button, input, label, select, textarea, form img {
+  vertical-align: middle;
+}
+
+button, input, select, textarea {
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, select, textarea {
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+select, textarea {
+  max-width: 100%;
+}
+
+input {
+  &[type="text"], &[type="number"], &[type="search"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="month"], &[type="week"], &[type="time"], &[type="email"], &[type="telephone"], &[type="url"], &[type="password"] {
+    max-width: 100%;
+  }
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+input {
+  &[type="color"], &[type="file"], &[type="image"], &[type="range"] {
+    border: none;
+    padding: 0;
+    background: none;
+  }
+
+  &[type="checkbox"], &[type="color"], &[type="radio"], &[type="range"] {
+    cursor: pointer;
+  }
+}
+
+select {
+  cursor: pointer;
+}
+
+input {
+  &[type="checkbox"], &[type="color"], &[type="file"], &[type="image"], &[type="radio"], &[type="range"] {
+    border: none;
+  }
+
+  &[type="password"] {
+    ime-mode: disabled;
+  }
+
+  &[disabled], &[readonly] {
+    cursor: default;
+  }
+}
+
+select {
+  &[disabled], &[readonly] {
+    cursor: default;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  + {
+    label {
+      /*margin-left: 10px;*/
+    }
+
+    input {
+      &[type="checkbox"], &[type="radio"] {
+        /*margin-left: 10px;*/
+      }
+    }
+  }
+
+  > input {
+    &[type="checkbox"], &[type="radio"] {
+      margin-right: 5px;
+    }
+  }
+}
+
+input {
+  &[type="checkbox"] + label, &[type="radio"] + label {
+    margin-left: 5px;
+  }
+}
+
+.over, form a img {
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -ms-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+input {
+  &[type="button"], &[type="image"], &[type="reset"], &[type="submit"] {
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+}
+
+button {
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -ms-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.over:hover {
+  opacity: .8;
+}
+
+form a {
+  &:hover img, &:active img {
+    opacity: .8;
+  }
+}
+
+input {
+  &[type="button"] {
+    &:hover, &:active {
+      opacity: .8;
+    }
+  }
+
+  &[type="image"] {
+    &:hover, &:active {
+      opacity: .8;
+    }
+  }
+
+  &[type="reset"] {
+    &:hover, &:active {
+      opacity: .8;
+    }
+  }
+
+  &[type="submit"] {
+    &:hover, &:active {
+      opacity: .8;
+    }
+  }
+}
+
+button {
+  &:hover, &:active {
+    opacity: .8;
+  }
+}
+
+label.error, input.error {
+  background: #ffeeee;
+}
+
+/*** tables ***/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  th, td {
+    word-break: break-all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/*** image ***/
+
+img {
+  vertical-align: bottom;
+  -ms-interpolation-mode: bicubic;
+}
+
+/*** selection ***/
+
+::-moz-selection, ::selection {
+  color: #fff;
+  background: #3399ff;
+  text-shadow: none;
+}
+
+input::selection, textarea::selection {
+  color: #000;
+}
+
+/*** placeholder ***/
+
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :placeholder-shown {
+  color: #aaa;
+  opacity: 1;
+}
+
+:focus {
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown {
+    color: inherit;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+/* def-editor-style-wrap
+============================================================ */
+
+.def-editor-style-wrap {
+  font-size: 14px;
+  color: #111;
+  padding: 40px 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4em;
+    margin: 25px 0 15px;
+  }
+
+  * {
+    background-position: initial;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    margin: 5px 0 25px;
+  }
+
+  ol, ul {
+    margin-left: 15px;
+    list-style-position: outside;
+    margin-bottom: 20px;
+  }
+
+  ol li {
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+    /* color: #626262; */
+  }
+
+  ul li {
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+    /* color: #626262; */
+
+    list-style-type: disc;
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+
+  a[href] {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    margin: 0 0 15px;
+
+    caption, td {
+      padding: 15px 7px;
+      font: inherit;
+    }
+
+    th {
+      padding: 15px 7px;
+      font: inherit;
+      font-weight: 400;
+      color: #6e6e6e;
+      background-position: 100% 100%;
+      background-size: 2px 10px;
+      background-repeat: no-repeat;
+      border: 1px solid #aaa;
+    }
+
+    td {
+      border: 1px solid #aaa;
+    }
+
+    tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    th:last-child {
+      background: none;
+    }
+  }
+
+  hr {
+    border-top: 2px solid #BBB;
+  }
+
+  td, th {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+  }
+
+  figure {
+    &.align-left {
+      float: left;
+    }
+
+    &.align-right {
+      float: right;
+    }
+
+    &.image {
+      &.align-center {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      display: inline-block;
+      border: 1px solid gray;
+      margin: 0 2px 0 1px;
+      background: #f5f2f0;
+
+      img {
+        /* margin: 8px 8px 0 8px; */
+      }
+
+      figcaption {
+        margin: 6px 8px 6px 8px;
+        text-align: center;
+      }
+    }
+  }
+
+  td[data-mce-selected], th[data-mce-selected] {
+    background-color: #2276d2 !important;
+  }
+
+  .ephox-snooker-resizer-bar {
+    background-color: #2276d2;
+    opacity: 0;
+  }
+
+  .ephox-snooker-resizer-cols {
+    cursor: col-resize;
+  }
+
+  .ephox-snooker-resizer-rows {
+    cursor: row-resize;
+  }
+
+  .ephox-snooker-resizer-bar.ephox-snooker-resizer-bar-dragging {
+    opacity: .2;
+  }
+}
+
+/* tiny org */
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .def-editor-style-wrap iframe {
+    width: 100%;
+    height: auto;
+  }
+}

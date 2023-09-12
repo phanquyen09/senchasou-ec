@@ -1,0 +1,4877 @@
+@charset "utf-8";
+
+@media screen and (max-width: 811px) {
+  #lay-header {
+    position: absolute;
+  }
+}
+/* -------------------------------------------------------------------------------------
+
+	特集ページ
+
+ ------------------------------------------------------------------------------------- */
+
+.special * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  word-break: break-all;
+}
+
+.special {
+  font-family: "Open Sans", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  background-color: #f2f6f7;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #403d3c;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  word-break: break-all;
+  line-height: 1.5em;
+}
+
+.special .layout_table {
+  width: 100%;
+}
+
+.special .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+span {
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.special img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.special p.pan {
+  margin: 0 auto;
+  width: 1120px;
+}
+
+.special .mv {
+  height: 40vw;
+  width: 100%;
+  -webkit-transition: 3s;
+  transition: 3s;
+  margin-bottom: 4rem;
+}
+
+.special .mv .bg {
+  background-image: url(https://shop.senkien.jp/images/fathersday/2022/fv.jpg);
+}
+
+.special .bg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.special .bg .img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main_catch {
+  padding: 0 0 4rem;
+  text-align: center;
+}
+
+.main_catch h1 {
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+  font-family: "Hannari", serif;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+}
+
+.main_catch .text {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  font-weight: 100;
+}
+
+.main_catch .text span {
+  margin-bottom: 2rem;
+}
+
+.special .container {
+  width: calc(100% - 10rem);
+  max-width: 1120px;
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+  height: 100%;
+  position: relative;
+}
+
+.special .l-reason .sec_ttl {
+  color: #006284;
+  ;
+  display: block;
+  padding: 1.2rem 0 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #006284;
+  border-radius: 6px;
+}
+
+.special .l-reason .sec_ttl rt {
+  font-size: 40%;
+}
+
+.special .l-reason-box {
+  padding: 1.6rem 4.5rem;
+  width: 50%;
+  border-bottom: #707070 1px solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.special .l-reason-box dt {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+  font-family: 'Noto Serif JP', serif;
+  color: #006284;
+}
+
+.special .l-reason-box dd {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 0;
+}
+
+.special .l-reason-box dd span {
+  font-size: .8rem;
+}
+
+.special .l-reason-box .num {
+  height: 4.5rem;
+  color: #006284;
+  font-size: 4.5rem;
+  text-align: left;
+  line-height: 4.5rem;
+  margin-right: 4.5rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.anchor .cont_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.anchor .cont_wrap.center {
+  justify-content: center;
+}
+
+.anchor .cont_wrap {
+  margin-bottom: 1rem;
+}
+
+.anchor .cont_wrap .col {
+  width: 48%;
+}
+
+.anchor .cont_wrap .col .a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.anchor .cont_wrap .col .left {
+  border: dotted 2px #009961;
+  height: 70px;
+}
+
+.anchor .cont_wrap .col .right {
+  width: 62%;
+  background: rgba(0, 98, 132, 0.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1.8rem;
+}
+
+.anchor .cont_wrap .col .right .in {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.anchor .cont_wrap .col .right .in .txt_box {
+  color: #403d3c;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.anchor .cont_wrap .col:hover .right .in {
+  background-color: #006284;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.anchor .cont_wrap .col:hover .right .in .txt_box,
+.anchor .cont_wrap .col:hover .right .in .txt_box .text {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.anchor img {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.anchor img:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+.sec_ttl {
+  font-size: 4.2rem;
+  line-height: 1.2em;
+  font-family: "Hannari", serif;
+  font-weight: 400;
+  color: #0B346E;
+  text-align: center;
+}
+
+.bg_ranking {
+  background-color: #ccebf4;
+  width: 100%;
+  padding: 2rem 0 2rem;
+}
+
+.ranking_list {
+  position: relative;
+  img {
+    background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/cs-bg-03.png) center 0 repeat !important;
+    background-size: 2.5% auto;
+    border-radius: 10px;
+    width: 100%;
+  }
+  p {
+    position: absolute;
+    margin: 0;
+    color: white;
+    background: #FFC408;
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 10px 15px;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.ranking .sec_view {
+  height: 28vw;
+  max-height: 400px;
+  margin-bottom: 8rem;
+}
+
+.ranking .sec_ttl {
+  margin-bottom: 3rem;
+}
+
+.ranking .sec_lead {
+  margin: 3rem 0 6rem;
+}
+
+.ranking_list li {
+  width: 32%;
+  text-align: center;
+  border-radius: 3px;
+  display: block;
+  padding: 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ranking_list li:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0.9;
+}
+
+.ranking_list span {
+  margin-top: 1rem;
+  line-height: 1.5em;
+  color: #403d3c;
+}
+
+.item_list .ph {
+  margin-bottom: 4rem;
+}
+
+.item_list .sec_ttl {
+  margin-bottom: 3rem;
+  color: #243c5c;
+}
+
+.item_list .sec_lead {
+  margin-bottom: 4rem;
+  font-family: 'Noto Serif JP', serif;
+  color: #403d3c;
+}
+
+.sec_lead {
+  line-height: 1.9em;
+  text-align: center;
+  font-size: 2.0rem;
+  p {
+    text-align: center;
+  }
+}
+
+.item_area .pkg {
+  position: relative;
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/first-bg.png) center 0 repeat !important;
+  background-size: 2.5% auto;
+  border-radius: 10px;
+  img {
+    padding: 20px;
+  }
+}
+
+.cs-bg-01.item_area .pkg {
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/cs-bg-01.png) center 0 no-repeat !important;
+}
+
+.cs-bg-02.item_area .pkg {
+  background: #EDD1CD url(https://cloud.senchasou.online/ectheme/theme03/img/f5/cs-bg-02.png) center 0 no-repeat !important;
+}
+
+.hiyahiya .item_area .pkg,
+.tea_sweets .item_area .pkg,
+.soba .pkg {
+  margin-bottom: 2rem;
+}
+
+.item_area.row .col.right {
+  margin-left: 6%;
+}
+
+.item_list .item_area.row .col {
+  margin-bottom: 0;
+}
+
+.item_list .item_area .col {
+  width: 42%;
+}
+
+.hiyahiya.item_list .item_area .col {
+  margin-bottom: 4rem;
+}
+
+.soba.item_list .item_area .col {
+  margin-bottom: 4rem;
+}
+
+.item_area.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.item_area {
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.item_area .data_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.item_wrap a {
+  color: #403d3c;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.item_wrap a:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+.item_area .item_ttl {
+  font-size: 2.4em;
+  margin-bottom: 4rem;
+}
+
+.item_area .data_box {
+  width: 100%;
+}
+
+.item_area .data_box .data {
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  line-height: 1.8;
+  width: 100%;
+}
+
+.item_area .data_box .price {
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+
+/*.item_area .data_box .order {
+  margin-top: 2rem;
+  width: 100%;
+}*/
+
+.item_area .data_box .btn {
+  width: 72%;
+  height: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #006284;
+  margin: 2rem auto 0;
+  border-radius: 6px;
+}
+
+.item_area .data_box .btn .a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+.item_area .data_box .btn:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+.item_area .data_box .btn .a .arrow {
+  right: 3rem;
+  position: absolute;
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.item_area .data_box .btn .a .arrow:before {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 7px;
+  height: 7px;
+  left: 6px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrow:before,
+.arrow:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.limited .item_area,
+.soba .item_area {
+  margin-bottom: 4rem
+}
+
+.hiyahiya {
+  margin-bottom: 4rem;
+}
+
+.limited {
+  margin-bottom: 4rem;
+}
+
+.anchor,
+.l-reason,
+.ranking,
+.tea_sweets {
+  margin-bottom: 10px;
+}
+
+.item_list .btn_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item_list.soba {
+  margin-bottom: 2rem;
+}
+
+.service {
+  padding: 5rem 0;
+}
+
+.service .attention {
+  font-size: 1.8rem;
+  margin-top: 6rem;
+  text-align: center;
+  color: #3e3a39;
+}
+
+.service .notes {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: #ff0044;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 80px;
+  color: #fff;
+}
+
+.notes {
+  text-align: center;
+  font-weight: bold;
+}
+
+.special .caption {
+  width: calc(100% - 12rem);
+  text-align: left;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+
+/*column*/
+
+.special .column {
+  padding: 4rem 0;
+}
+
+.column article {
+  padding-top: 3rem;
+}
+
+.column .sec_lead {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.column .sec_lead p {
+  line-height: 1.5em;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-indent: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 0.6em;
+  background: #FFC408;
+}
+
+.column h3:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #FFC408;
+  width: 0;
+  height: 0;
+}
+
+.column .text_column p {
+  line-height: 1.8em;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.column p span {
+  font-weight: bold;
+}
+
+
+/*notification*/
+
+.special .notification {
+  text-align: center;
+  display: block;
+  margin: 0 auto 2rem;
+  font-size: .9rem;
+  line-height: 1.8em;
+  padding: 1rem;
+}
+
+.special .col_not {
+  border-top: 3px double #006284;
+  border-bottom: 3px double #006284;
+  width: 100%;
+  padding: 1rem;
+}
+
+.special .notification p {
+  margin-bottom: 1rem;
+}
+
+.special .notification span {
+  font-weight: bold;
+}
+
+.special .notification .linear {
+  font-weight: normal;
+  background: linear-gradient(transparent 70%, #FFFF00 0%);
+}
+
+.special .notification .ttl_not {
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  color: #006284;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.special .notification .caution {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+/*---------------
+　　夏ギフト2022
+---------------*/
+
+.special.summer_gifts {
+  background: #fff;
+}
+
+.special .mv {
+  margin-bottom: 0;
+}
+
+.special.summer_gifts .mv .bg {
+  background-image: url(https://shop.senkien.jp/images/summer_gifts/2022/fv.jpg);
+}
+
+.special.summer_gifts .main_catch {
+  padding-top: 1rem;
+}
+
+.ice_pop,
+.jelly_baked,
+.summer_gifts .hiyahiya {
+  margin-bottom: 6rem;
+}
+
+.tea {
+  margin-bottom: 1rem;
+}
+
+.summer_gifts .tea_sweets {
+  margin-bottom: 2rem;
+}
+
+.ice_pop .pkg {
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.tea.item_list .item_area .col {
+  margin-bottom: 4rem;
+}
+
+.jelly_baked .item_area .pkg,
+.tea .item_area .pkg,
+.soba .pkg {
+  margin-bottom: 2rem;
+}
+
+.ice_pop .item_area {
+  margin-bottom: 4rem
+}
+
+.summer_gifts .item_list .sec_ttl {
+  color: #403d3c;
+}
+
+.summer_gifts .anchor .cont_wrap .col .left img {
+  height: 60px;
+}
+
+.summer_gifts .anchor .cont_wrap .col .right {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1.8rem;
+  border-bottom: 1px solid #9e9e9e;
+}
+
+.summer_gifts .anchor .cont_wrap .col .right .in {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.summer_gifts .anchor .cont_wrap .col .right .in .txt_box {
+  color: #403d3c;
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /*  transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;*/
+}
+
+.summer_gifts .anchor .cont_wrap .col:hover .right .in {
+  background-color: #fff;
+}
+
+.summer_gifts .main_catch .container {
+  background: url(https://shop.senkien.jp/images/summer_gifts/2022/bg_hanabi.png) top no-repeat;
+  background-size: 90%;
+  ;
+}
+
+.summer_gifts .main_catch h1 {
+  font-family: 'Hina Mincho', serif;
+  padding-top: 3rem;
+}
+
+.summer_gifts .main_catch h1 span {
+  color: #329AD2;
+}
+
+.summer_gifts .anchor .cont_wrap .col:hover .right .in .txt_box,
+.anchor .cont_wrap .col:hover .right .in .txt_box .text {
+  color: #329AD2;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.summer_gifts .anchor .cont_wrap .col .left {
+  width: 38%;
+  margin-right: 10px;
+}
+
+.summer_gifts .tea_sweets.item_list .item_area .col {
+  margin-bottom: 4rem;
+}
+
+.summer_gifts .item_wrap a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 1;
+  color: #329AD2;
+}
+
+.summer_gifts .item_wrap a .pkg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.summer_gifts .item_wrap a .pkg:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.6;
+}
+
+.summer_gifts .item_area .data_box .data {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.summer_gifts .item_area .data_box .data:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #329AD2;
+}
+
+.summer_gifts .item_area .data_box .btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #329AD2;
+}
+
+.summer_gifts .item_area .data_box .btn .a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.summer_gifts .item_area .data_box .btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  background: #a5d7ed;
+  color: #329AD2;
+}
+
+.summer_gifts .bg_ranking {
+  background-color: #f4f2e8;
+}
+
+.summer_gifts .ranking .sec_ttl,
+.ranking_list span {
+  color: #403d3c;
+  background: none;
+}
+
+.summer_gifts .ranking .fa-solid {
+  color: #329AD2;
+}
+
+.summer_gifts .sec_ttl {
+  font-family: 'Hina Mincho', serif;
+  line-height: 1.3em;
+  background: url(https://shop.senkien.jp/images/summer_gifts/2022/bg_sec_ttl_20.png) center no-repeat;
+  background-position: bottom;
+  background-size: 50%;
+}
+
+.summer_gifts .l-reason .sec_ttl {
+  font-family: 'Noto Serif JP', serif;
+  background: none;
+}
+
+.jelly_baked .sec_ttl span {
+  color: #329AD2;
+  font-size: 1.5rem;
+  /*font-weight: bold;*/
+}
+
+.jelly_baked.item_list .item_area .col,
+.hiyahiya.item_list .item_area .col {
+  margin-bottom: 6rem;
+}
+
+.summer_gifts .l-reason .sec_ttl {
+  color: #329AD2;
+  ;
+  border: 1px solid #329AD2;
+}
+
+.summer_gifts .l-reason-box dt {
+  color: #329AD2;
+}
+
+.summer_gifts .l-reason-box .num {
+  color: #329AD2;
+}
+
+.summer_gifts .l-reason-box {
+  padding: 1.6rem 4.5rem;
+  width: 50%;
+  border-bottom: #329AD2 1px solid;
+}
+
+.summer_gifts .ranking_list li {
+  width: 20%;
+}
+
+.ranking_list.img_circle li img {
+  border-radius: 50%;
+  border: #fff 2px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.summer_gifts .ranking_list p {
+  font-size: 1.4rem;
+  font-family: 'Noto Serif JP', serif;
+  background: #329AD2;
+  left: 0px;
+}
+
+.summer_gifts .ranking_list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.summer_gifts .ranking_list span {
+  margin-top: 1rem;
+  font-size: .9rem;
+}
+
+.summer_gifts .text.sec_lead p span {
+  margin-bottom: 1rem;
+}
+
+.ranking_list p.ribbon {
+  display: inline-block;
+  z-index: 2000;
+  width: 56px;
+  text-align: center;
+  margin-left: -112px;
+  margin-top: -10px;
+}
+
+.ranking_list p.ribbon:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid transparent;
+}
+
+.ranking_list p.ribbon.gold {
+  background: #EFC433;
+}
+
+.ranking_list p.ribbon.gold:after {
+  border-left: 28px solid #EFC433;
+  border-right: 28px solid #EFC433;
+}
+
+.ranking_list p.ribbon.silver {
+  background: #b2b2b2;
+}
+
+.ranking_list p.ribbon.silver:after {
+  border-left: 28px solid #b2b2b2;
+  border-right: 28px solid #b2b2b2;
+}
+
+.ranking_list p.ribbon.bronz {
+  background: #C1AB8C;
+}
+
+.ranking_list p.ribbon.bronz:after {
+  border-left: 28px solid #C1AB8C;
+  border-right: 28px solid #C1AB8C;
+}
+
+.winter_gifts .rank p {
+  background: #880d1b;
+}
+
+.summer_gifts .item_list.ice_pop .item_area .col {
+  width: 33%;
+}
+
+.tea .item_area {
+  margin-bottom: 0;
+}
+
+.info_sg {
+  margin-bottom: 4rem;
+}
+
+.info_sg li {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.btn_more {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.btn_more a {
+  color: #329AD2;
+  padding: 1.5rem 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #329AD2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn_more a:hover {
+  color: #fff;
+  border: 1px solid #329AD2;
+  background: #329AD2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.item_area .data_box .btn:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+
+/*カテゴリから選ぶ・予算から選ぶ*/
+
+.summer_gifts .selection {
+  background: #f4f2e8;
+  padding: 2rem 0 5rem;
+}
+
+.by_category {
+  padding-bottom: 2rem;
+}
+
+.by_category .container {
+  border-bottom: 1px dotted #403d3c;
+  padding-bottom: 3rem;
+}
+
+.selection h2 span {
+  color: #329AD2;
+  line-height: 2rem;
+}
+
+.special .by_category.item_list .item_area .col {
+  width: 22%;
+  margin-bottom: 2rem;
+}
+
+.by_category .item_area .pkg {
+  margin-bottom: 1rem;
+}
+
+.selection .item_list .sec_ttl {
+  padding: 2rem 0 0;
+}
+
+.selection .cat_ttl {
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+}
+
+.by_price .cat_ttl {
+  color: #329AD2;
+  padding: 2rem .5rem;
+  transition: 0.3s;
+}
+
+.by_price .cat_ttl:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.by_price.item_list .item_area .col {
+  width: 18%;
+  margin-bottom: 2rem;
+  border: 1px solid #329AD2;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.by_price.item_list .item_area .col:hover {
+  background-color: #329AD2;
+  transition: 0.3s;
+}
+
+.selection .sec_ttl {
+  background: none;
+}
+
+
+/*---------------
+　　敬老ギフト2022
+---------------*/
+
+
+/*共通*/
+
+.item_list .item_area .col3 {
+  width: 30%;
+}
+
+.ranking_list.img_radius li img {
+  border-radius: 5%;
+  /*border: #fff 2px solid;*/
+  width: 100%;
+  height: 100%;
+}
+
+.item_area .pkg {
+  margin-bottom: 2rem;
+}
+
+
+/*ココマデ*/
+
+.special.keirou_gifts {
+  background: #f8f3e0;
+  background: #f9f7f1;
+  color: #524748;
+}
+
+.special.keirou_gifts .mv {
+  height: 55vw;
+}
+
+.special.keirou_gifts .mv .bg {
+  background: url(https://shop.senkien.jp/images/keirou/2022/fv.png);
+  background: url(https://shop.senkien.jp/images/keirou/2022/2022kg_fv_clean.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.keirou_gifts .main_catch {
+  margin-top: -17%;
+}
+
+@media screen and (max-width: 960px) {
+  .keirou_gifts .main_catch {
+    margin-top: -13%;
+  }
+  .main_catch h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.keirou_gifts .main_catch h1 {
+  font-family: 'Noto Serif JP', serif;
+  color: #752100;
+}
+
+.anchor .cont_wrap {
+  margin: 0 auto 1rem;
+  width: 80%;
+}
+
+.keirou_gifts .sec_ttl {
+  color: #752100;
+  font-family: 'Noto Serif JP', serif;
+  background: url(https://shop.senkien.jp/images/keirou/2022/bg_sec_ttl.png) no-repeat bottom;
+  background-size: 30%;
+}
+
+.keirou_gifts .item_list .sec_ttl {
+  padding-bottom: 4.5rem;
+  margin-bottom: 0;
+}
+
+.l-reason .sec_ttl,
+.ranking .sec_ttl,
+.selection .sec_ttl {
+  background: none;
+}
+
+.keirou_gifts .ranking .sec_ttl {
+  color: #fff;
+}
+
+.keirou_gifts .anchor .cont_wrap .col .right {
+  border-radius: 5px 0 0 5px;
+}
+
+.keirou_gifts .anchor .cont_wrap .col .right {
+  background: #f7c214;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  height: 70px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+}
+
+.keirou_gifts .anchor .cont_wrap .col .right p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.keirou_gifts .anchor .cont_wrap .col .right span {
+  padding-left: .5rem;
+  font-size: 70%;
+}
+
+.keirou_gifts .anchor2 .cont_wrap .col .left img {
+  border-radius: 5px 0 0 5px;
+}
+
+.keirou_gifts .anchor .cont_wrap .col a {
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.special.keirou_gifts .l-reason .sec_ttl {
+  color: #ee7948;
+  border: 1px solid #ee7948;
+}
+
+.keirou_gifts .l-reason .sec_ttl {
+  color: #ee7948;
+  border: 1px solid #ee7948;
+}
+
+.keirou_gifts .l-reason-box dt {
+  color: #ee7948;
+}
+
+.keirou_gifts .l-reason-box .num {
+  color: #ee7948;
+}
+
+.keirou_gifts .l-reason-box {
+  padding: 1.6rem 4.5rem;
+  width: 50%;
+  border-bottom: #ee7948 1px solid;
+}
+
+.keirou_gifts .ranking_list li {
+  width: 20%;
+  padding: .7rem;
+}
+
+.keirou_gifts .bg_ranking {
+  background-color: #ee7948;
+  width: 100%;
+  padding: 4rem 0 3rem;
+  width: 100%;
+  background: linear-gradient(45deg, #f0926a 25%, transparent 25%, transparent 75%, #f0926a 75%), linear-gradient(45deg, #f0926a 25%, transparent 25%, transparent 75%, #f0926a 75%);
+  background-color: #ee805d;
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+}
+
+.keirou_gifts .ranking .sec_ttl,
+.keirou_gifts .ranking_list span {
+  color: #fff;
+}
+
+.keirou_gifts .ranking_list p {
+  background: #ea5506;
+}
+
+.keirou_gifts .item_list .item_area .col {
+  margin-bottom: 6rem;
+}
+
+.keirou_gifts .item_area .data_box {
+  color: #524748;
+}
+
+.keirou_gifts .item_area .data_box .btn {
+  background: #ee7948;
+}
+
+.keirou_gifts .item_list .sec_lead {
+  color: #524748;
+  margin-top: 2rem;
+}
+
+.keirou_gifts .tea_sweets {
+  margin-bottom: 0;
+}
+
+.keirou_gifts .btn_more a {
+  color: #a73723;
+  background: none;
+  border: 1px solid #a73723;
+}
+
+.keirou_gifts .by_category .sec_ttl,
+.keirou_gifts .by_price .sec_ttl {
+  color: #543f32;
+}
+
+.keirou_gifts .selection h2 span {
+  color: #752100;
+}
+
+.keirou_gifts .by_price .cat_ttl {
+  color: #752100;
+}
+
+.keirou_gifts .item_wrap a:hover {
+  opacity: 1;
+  color: #ee7948;
+}
+
+.keirou_gifts .by_price .cat_ttl:hover {
+  color: #fff;
+}
+
+.keirou_gifts .by_price.item_list .item_area .col:hover {
+  background-color: #f6b894;
+}
+
+.keirou_gifts .by_price.item_list .item_area .col {
+  border: 1px solid #752100;
+}
+
+.keirou_gifts .selection {
+  background: #fde8d0;
+  padding: 2rem 0 5rem;
+  margin-bottom: 3rem;
+}
+
+.keirou_gifts .item_wrap a .pkg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.keirou_gifts .item_wrap a .pkg:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.6;
+}
+
+.keirou_gifts .item_wrap a .data_box {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.keirou_gifts .item_wrap a .data_box:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 1;
+  color: #ee7948;
+}
+
+.keirou_gifts .service {
+  margin-bottom: 5rem;
+}
+
+
+/*片付け*/
+
+.special.keirou_gifts .notification .col_not {
+  border-top: 3px double #ee7948;
+  border-bottom: 3px double #ee7948;
+  width: 64%;
+  padding: 1rem;
+  margin-top: -2rem;
+}
+
+.keirou_gifts .notification .ttl_not {
+  color: #ee7948;
+}
+
+
+/*-------------------
+　　カテゴリページ
+-------------------*/
+
+
+/*共通*/
+
+.re_cat .wrapper p,
+.re_cat .list_wrapper p {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.re_cat h2.cove-main {
+  margin: 3rem auto 2rem;
+  /*font-weight: normal;*/
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+  line-height: 1.6;
+}
+
+.re_cat .cove-txt.center p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8em;
+  font-weight: 100;
+  margin-left: 0
+}
+
+.re_cat .wrapper {
+  width: 100%;
+  margin: 2rem auto 6rem;
+}
+
+.re_cat .item_list.wrapper {
+  margin: 2rem auto 1rem;
+}
+
+.re_cat .list_wrapper {
+  width: 90%;
+  margin: 2rem auto 6rem;
+}
+
+.re_cat .flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.re_cat .white-btn a {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.re_cat .black-btn a {
+  color: #000;
+  background: none;
+  padding: 4px 0;
+  font-size: 85%;
+  margin: .5rem 0 0;
+  border: 1px solid #000;
+}
+
+.re_cat .black-btn a:hover {
+  background: #444;
+  color: #fff;
+  border: 1px solid #444;
+  opacity: 1;
+}
+
+.re_cat .line_up .black-btn a {
+  padding: 6px 0 7px;
+  width: 90%;
+  margin-left: 0;
+}
+
+.re_cat .black-btn {
+  margin-left: 0;
+}
+
+.re_cat .black-btn p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 20;
+}
+
+.re_cat .black-btn:hover p {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  -webkit-transform: translate(0%, -50%);
+  /* Safari用 */
+  transform: translate(0%, -50%);
+}
+
+.re_cat .recommend-sub {
+  margin: 0 auto 2rem;
+}
+
+.re_cat .recommend-sub li a {
+  padding: 0;
+  text-align: center;
+}
+
+.re_cat .recommend-sub li a img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.re_cat .recommend-sub.gr_3 ul {
+  margin: 0 auto;
+}
+
+.re_cat .recommend-sub.gr_3 li {
+  width: 30%;
+}
+
+.re_cat .recommend-sub.gr_3 li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.re_cat .recommend-sub.gr_5 li {
+  width: 30%;
+}
+
+.re_cat .recommend-sub.gr_5 li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.re_cat .recommend-sub li a {
+  font-size: 90%;
+  line-height: 1.6;
+  text-align: left;
+  font-family: 'Noto Serif JP', serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.re_cat .recommend-sub li a:hover {
+  opacity: .6;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.re_cat .recommend-sub li .price {
+  color: #444;
+  line-height: 2.2em;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.re_cat .recommend-sub li .black-btn a {
+  text-align: center;
+  padding: 6px 0 7px;
+}
+
+.re_cat .ttl_sec {
+  border: 1px solid #666;
+  padding: 14px;
+  width: 50%;
+  margin: 0 auto 3rem;
+  color: #333;
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.re_cat .ttl_area {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.re_cat .item_list .item_area .col {
+  width: 48%;
+  margin-bottom: 4rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.re_cat .item_list .item_area.flame .col {
+  width: 50%;
+  margin-bottom: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.re_cat .item_list .item_area.flame .pkg {
+  margin-bottom: 0;
+}
+
+.re_cat .secret .item_list .item_area .data_box p {
+  font-size: 100%;
+}
+
+.re_cat .item_list .item_area .data_box {
+  position: relative;
+  color: #000;
+}
+
+.re_cat .item_list .item_area .data_box p {
+  /*font-size: 90%;*/
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.re_cat .item_area .data_box .data {
+  font-size: 1rem;
+  padding: 8% 0 8% 8%;
+}
+
+.re_cat .item_area.flame .data_box .data {
+  font-size: .9rem;
+  padding: 0 0 0 8%;
+}
+
+.re_cat .line_up.item_list .item_area .data p {
+  font-size: 90%;
+}
+
+.re_cat .line_up .item_area .item_ttl p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  position: absolute;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  right: 5%;
+  top: 10%;
+  text-align: center;
+}
+
+.re_cat .line_up .item_area .data {
+  margin-right: 15%;
+}
+
+.re_cat .line_up .item_area .col {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.re_cat .line_up .item_area .col.right {
+  margin-left: 0;
+}
+
+.re_cat .line_up .item_area .pkg {
+  margin-bottom: 0;
+}
+
+.re_cat .line_up.item_list.wrapper {
+  margin: 2rem auto 6rem;
+}
+
+.re_cat .scene dd {
+  font-size: 90%;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.re_cat .scene dd.ttl_scene {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  font-family: 'Noto Serif JP', serif;
+  line-height: 2em;
+  border-bottom: 2px solid #d5ddbb;
+}
+
+.re_cat .recommend-sub.gr_3 .flex {
+  justify-content: center;
+}
+
+
+/*チーズケーキ*/
+
+.cheesecake .recommend-sub.gr_3 .flex {
+  justify-content: right;
+}
+
+.cheesecake .line_up .item_area .data_box .data {
+  font-size: 1rem;
+  padding: 8% 6% 8% 8%;
+}
+
+.matchamaru {
+  background: #D5DDBB;
+  color: #333;
+}
+
+.shiromaru {
+  background: #f7e2bb;
+  color: #333;
+}
+
+.kuromaru {
+  background: #c5c6c5;
+  color: #333;
+}
+
+.cheesecake .secret p span {
+  font-size: 110%;
+  background: linear-gradient(transparent 80%, #ffec47 80%);
+  font-weight: bold;
+}
+
+.re_cat .line_up .shiromaru .item_area .item_ttl p {
+  left: 5%;
+  right: 83%;
+}
+
+.re_cat .line_up .shiromaru .item_area .data {
+  margin-left: 15%;
+  margin-right: 0;
+  padding: 8% 8% 8% 6%;
+}
+
+
+/*ほうじ茶*/
+
+.houjicha_autumn .item_list .item_area .col {
+  width: 47%;
+}
+
+.houjicha_autumn .item_area .item_ttl {
+  font-size: 1.2rem;
+}
+
+.houjicha_autumn .item_area .data_box .data {
+  font-size: 100%;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.houjicha_autumn .item_area .data_box .data p {
+  margin-bottom: 10px;
+}
+
+.houjicha_autumn .item_area .data .black-btn a {
+  padding: 6px 0;
+  margin-left: 0;
+}
+
+.houjicha_autumn .mb-txt p {
+  margin-top: 20px;
+}
+
+
+/******************************/
+
+
+/*50周年記念キャンペーンサイト*/
+
+
+/******************************/
+
+.special.anniversary {
+  background: none;
+  background-color: none;
+}
+
+.anniversary .mv {
+  margin-bottom: 2rem;
+  /* position: relative;
+  z-index: 100;*/
+}
+
+.anniversary .mv .bg {
+  background-image: url(https://shop.senkien.jp/images/50thAnniversary/50th_cpn_fv_2.jpg);
+}
+
+.anniversary .baloon {
+  position: absolute;
+  width: 20vw;
+  bottom: -4vw;
+  right: 4vw;
+  overflow: visible;
+  /* z-index: 999;*/
+}
+
+.anniversary .main_catch .text p {
+  margin-bottom: 1.4rem;
+}
+
+.anniversary .anchor {
+  margin-bottom: 0;
+}
+
+.anniversary .bg_anchor {
+  background: #8fa368;
+  /*background: #68843B;*/
+  padding: 4rem;
+  padding: 4rem 4rem 3rem;
+}
+
+.anniversary .anchor_list li {
+  width: 32%;
+  padding: 0.7rem;
+  position: relative;
+  width: 24.5%;
+}
+
+.anniversary .anchor_list a {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 6px solid #fff;
+  border-radius: 10px;
+  padding: 2rem 1rem .5rem;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.anniversary .anchor_list a:hover {
+  border: 6px solid #c3a84d;
+  transition: .3s;
+}
+
+.cpn {
+  padding: 6rem 0;
+  background: #CBD4CB;
+}
+
+.anniversary .cpn_container {
+  width: calc(100% - 10rem);
+  max-width: 1120px;
+  margin: 0 auto 5rem;
+  width: calc(100% - 2rem);
+  height: 100%;
+  position: relative;
+  padding: 5rem 8rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.anniversary .item_list .sec_ttl {
+  color: #333;
+  font-weight: bold;
+  font-family: 'Noto Serif JP', serif;
+  line-height: 1.4;
+}
+
+.anniversary .item_list span {
+  color: #e80000;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.anniversary .item_list .sec_lead {
+  font-family: "Open Sans", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background: #e80000;
+  padding: .2rem 2rem;
+  max-width: 60%;
+  margin: 0 auto 4rem;
+}
+
+.anc_cpn p {
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.4;
+  color: #333;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  font-size: 0.9rem;
+}
+
+.anc_cpn p.circle,
+.cpn_no p.circle {
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  margin: 0;
+  color: white;
+  background: #FFC408;
+  background: #c3a84d;
+  font-size: 1.2rem;
+  display: inline-block;
+  z-index: 2;
+  width: 100px;
+  padding: 30px 10px 32px;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+  font-weight: normal;
+  line-height: .9;
+}
+
+.cpn_no p.circle {
+  left: 510px;
+  transform: none;
+  text-align: center;
+}
+
+.anc_cpn p.circle span,
+.cpn_no p.circle span {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.anc_cpn .fa-solid {
+  font-size: 1.8rem;
+}
+
+.anc_cpn p.em {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-size: 1.4rem;
+}
+
+.anc_cpn p.em span {
+  color: #C21732;
+  color: #e80000;
+  font-size: 3rem;
+  /*border-bottom: 5px solid #FFC408;*/
+  font-size: 2rem;
+}
+
+.anniversary .cpn_1.item_list .item_area .col {
+  width: 32%;
+  margin-bottom: 3rem;
+}
+
+.anniversary .cpn_2.item_list .item_area .col,
+.anniversary .cpn_3.item_list .item_area .col {
+  margin-bottom: 1rem;
+}
+
+.anniversary .item_area .pkg {
+  margin-bottom: 1rem;
+}
+
+.step-method {
+  background-color: #68843B;
+  background-color: #8fa368;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  padding: 1rem 0;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.step-method::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #68843B;
+  background-color: #8fa368;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.anniversary .cove-txt.ex p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #4e5e2e;
+  line-height: 1.8;
+}
+
+.anniversary .item_list .cove-txt.ex p span {
+  font-size: 110%;
+  background: linear-gradient(transparent 52%, #F9EB7D 65%);
+  font-weight: bold;
+  color: #4e5e2e;
+}
+
+.anniversary .item_area .data {
+  text-align: center;
+}
+
+.zoomIn {
+  animation-name: zoomInAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes zoomInAnime {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.anniversary .anchor_list a.end:hover {
+  border: 6px solid #ddd;
+}
+
+.anniversary .item_list .end span {
+  color: #333;
+}
+
+.anniversary .cpn_end {
+  position: absolute;
+  width: 80%;
+  top: 30%;
+  left: 10%;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background: #e80000;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+/*---------------
+　　冬ギフト2022
+---------------*/
+
+.winter_gifts .item_area .data_box .price {
+  font-size: 1.2rem;
+}
+
+
+/*共通*/
+
+.anchor.anchor3 .cont_wrap {
+  width: 100%;
+  margin: 0 auto 0.5rem;
+}
+
+.anchor3 .cont_wrap .col {
+  width: 32%;
+  display: inline-flex;
+}
+
+.anchor3 .cont_wrap .col img {
+  height: 100%;
+}
+
+.anchor3 .cont_wrap .col .right {
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  height: 70px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+}
+
+.anchor3 .cont_wrap .col .right p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.anchor3 .cont_wrap .col .right span {
+  padding-left: .5rem;
+  font-size: 70%;
+  margin: auto 15px;
+}
+
+.anchor3 .cont_wrap .col a {
+  text-decoration: none;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.item_area .col3,
+.item_area.row .col4 {
+  margin-bottom: 6rem;
+}
+
+.item_area .col4 {
+  margin-bottom: 4rem;
+}
+
+.item_area .col3 .item_ttl {
+  font-size: 1.2rem;
+  margin-bottom: 0.85rem;
+}
+
+.item_area .col3 .pkg {
+  margin-bottom: 1.4rem;
+}
+
+.item_area .col3 .data_box .data {
+  font-size: 0.94rem;
+}
+
+.item_area .col3 .data_box .price {
+  font-size: 0.85rem;
+  margin-top: 0rem;
+  font-size: 1.1rem;
+}
+
+.item_area .col3 .data_box .btn {
+  margin: 1.5rem auto 0;
+}
+
+.item_list .item_area .col4 {
+  width: 24%;
+}
+
+.item_area .col4 .item_ttl {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.item_area .col4 .pkg {
+  margin-bottom: 1.2rem;
+}
+
+.item_area .col4 .data_box .data {
+  font-size: 0.85rem;
+}
+
+.item_area .col4 .data_box .price {
+  font-size: 0.77rem;
+  /*margin-top: 0.77rem;*/
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.item_area .col4 .data_box .btn {
+  margin: 1.3rem auto 0;
+  height: 40px;
+}
+
+
+/*ココマデ*/
+
+.special.winter_gifts {
+  background-color: #fdfdf5;
+  color: #524748;
+  background-image: url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_bg_left.jpg), url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_bg_right.jpg);
+  background-position: left, right;
+  background-repeat: repeat-y, repeat-y;
+  height: 100%;
+}
+
+.special.winter_gifts .mv {
+  height: 45vw;
+  margin-bottom: 6rem;
+}
+
+.special.winter_gifts .mv .bg {
+  background: url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_fv.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.winter_gifts .main_catch h1 {
+  font-family: 'Noto Serif JP', serif;
+  color: #880d1b;
+}
+
+.anchor .cont_wrap {
+  margin: 0 auto 1rem;
+  width: 80%;
+}
+
+.winter_gifts .sec_ttl {
+  color: #880d1b;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.winter_gifts .item_list .sec_ttl {
+  margin-bottom: 2rem;
+}
+
+.l-reason .sec_ttl,
+.ranking .sec_ttl,
+.selection .sec_ttl {
+  background: none;
+}
+
+.winter_gifts .ranking .sec_ttl {
+  color: #fff;
+}
+
+.winter_gifts .anchor3 .cont_wrap .col .right {
+  background-color: rgba(0,153,97, 0.4);
+  background-size: 20px 20px;
+  /* radial-gradientが適用されるサイズ */
+  background-repeat: repeat;
+  background-image: radial-gradient(closest-side, rgba(0,153,97, 0.9) 98%, rgba(0,153,97, 0.7) 100%), radial-gradient(circle at top left, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at top right, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom left, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom right, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%);
+  background-position: center;
+}
+
+.winter_gifts .anchor2 .cont_wrap .col .left img {
+  border-radius: 5px 0 0 5px;
+}
+
+.winter_gifts .anchor3 .cont_wrap .col a {
+  color: #fff;
+}
+
+.special.winter_gifts .l-reason .sec_ttl {
+  color: #880d1b;
+  border: 1px solid #880d1b;
+}
+
+.winter_gifts .l-reason .sec_ttl {
+  color: #880d1b;
+  border: 1px solid #880d1b;
+}
+
+.winter_gifts .l-reason-box dt {
+  color: #880d1b;
+}
+
+.winter_gifts .l-reason-box .num {
+  color: #880d1b;
+}
+
+.winter_gifts .l-reason-box {
+  padding: 1.6rem 4.5rem;
+  width: 50%;
+  border-bottom: #880d1b 1px solid;
+  .cs-tel {
+    display: block;
+    span {
+      margin-left: 50px;
+      font-size: 3rem !important;
+      margin-top: 15px;
+      &:after {
+        content: "";
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: 62.5%;
+        top: 619px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background: url(https://cloud.senchasou.online/ectheme/theme03/img/common/icon-tel-b.png) center no-repeat;
+        background-size: 36px auto;
+      }
+    }
+  }
+}
+
+.winter_gifts .ranking {
+  margin-bottom: 8rem;
+}
+
+.winter_gifts .ranking_list li {
+  width: 20%;
+  padding: .7rem;
+  a:hover,
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.winter_gifts .bg_ranking {
+  width: 100%;
+  padding: 4rem 0 3rem;
+  background-size: 95px 95px;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: radial-gradient(closest-side, rgba(0,153,97, 0.9) 98%, rgba(0,153,97, 0.7) 100%), radial-gradient(circle at top left, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at top right, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom left, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom right, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%);
+}
+
+
+/*CEB967
+rgba(206,185,103)*/
+
+.winter_gifts .ranking .sec_ttl,
+.winter_gifts .ranking_list span {
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+.winter_gifts .ranking_list p {
+  background: #880d1b;
+}
+
+.winter_gifts .item_list .rec_no {
+  margin: 0 auto 1rem;
+  text-align: center;
+  width: 240px;
+  height: 100px;
+}
+
+.winter_gifts .item_list .item_area .col {
+  margin-bottom: 6rem;
+}
+
+.winter_gifts .item_area .data_box {
+  color: #524748;
+}
+
+.winter_gifts .item_area .data_box .btn {
+  background: #880d1b;
+}
+
+.winter_gifts .item_list .sec_lead {
+  color: #524748;
+  margin-top: 2rem;
+}
+
+.winter_gifts .item_list.goodfortunetea .sec_lead p {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.winter_gifts .item_list.goodfortunetea .sec_lead p span {
+  font-weight: bold;
+  background: linear-gradient(transparent 52%, #e9d2d5 65%);
+}
+
+.winter_gifts .tea_sweets {
+  margin-bottom: 0;
+}
+
+.winter_gifts .btn_more a {
+  color: #a73723;
+  background: none;
+  border: 1px solid #a73723;
+}
+
+.winter_gifts .petit_gifts,
+.winter_gifts .soba {
+  margin-bottom: 6rem;
+}
+
+.winter_gifts .tea {
+  margin-bottom: 6rem;
+}
+
+.winter_gifts .goodfortunetea,
+.winter_gifts .sweets_set {
+  margin-bottom: 3rem;
+}
+
+.bn_goodfortunetea {
+  width: 440px;
+  height: auto;
+  margin: 0 auto 6rem;
+  text-align: center;
+}
+
+.bn_goodfortunetea a {
+  text-decoration: none;
+}
+
+.bn_goodfortunetea a {
+  text-decoration: none;
+  transition: .3s;
+}
+
+.bn_goodfortunetea a:hover {
+  opacity: 0.6;
+  transition: .3s;
+}
+
+.winter_gifts h3 {
+  margin: 0 0 .8rem;
+  line-height: 2.4;
+  border-bottom: 3px double #880d1b;
+  font-size: 2.1rem;
+  color: #880d1b !important;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.winter_gifts .h3_txt {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.winter_gifts .petit_gifts .ph,
+.winter_gifts .soba .ph,
+.winter_gifts .tea .ph {
+  text-align: center;
+  background: url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_mizuhiki.jpg) center no-repeat;
+  background-position: bottom;
+  padding-bottom: 5.5rem;
+  background-size: 60%;
+  font-family: 'Noto Serif JP', serif;
+  color: #524748 !important;
+  font-weight: normal;
+}
+
+.winter_gifts .ph span {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2;
+  font-family: "Open Sans", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+.winter_gifts .by_category .sec_ttl,
+.winter_gifts .by_price .sec_ttl {
+  color: #543f32;
+}
+
+.winter_gifts .selection h2 span {
+  color: #880d1b;
+}
+
+.winter_gifts .by_price .cat_ttl {
+  color: #880d1b;
+}
+
+.winter_gifts .item_wrap a:hover {
+  opacity: 1;
+  color: #880d1b;
+}
+
+.winter_gifts .by_price .cat_ttl:hover {
+  color: #fff;
+}
+
+.winter_gifts .by_price.item_list .item_area .col:hover {
+  background-color: #b86e79;
+}
+
+.winter_gifts .by_price.item_list .item_area .col {
+  border: 1px solid #880d1b;
+}
+
+.winter_gifts .selection {
+  background: #f1e5e0;
+  padding: 2rem 0 5rem;
+}
+
+.winter_gifts .item_wrap a .pkg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.winter_gifts .item_wrap a .pkg:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.6;
+}
+
+.winter_gifts .item_wrap a .data_box {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.winter_gifts .item_wrap a .data_box:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 1;
+  color: #880d1b;
+}
+
+.winter_gifts .column,
+.winter_gifts .service {
+  background: #fff;
+}
+
+.winter_gifts .column h3 {
+  // background-color: rgba(224,93,78, 0.5);
+  background-size: 50px 50px;
+  /* radial-gradientが適用されるサイズ */
+  background-repeat: repeat;
+  background-image: radial-gradient(closest-side, rgba(0,153,97, 0.9) 98%, rgba(0,153,97, 0.7) 100%), radial-gradient(circle at top left, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at top right, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom left, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom right, rgba(0,153,97, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%);
+  background-position: center;
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.winter_gifts .column h3:after {
+  border-top: 15px solid #CEB967;
+}
+
+
+/*---------------
+　　お年賀2023
+---------------*/
+
+
+/*共通*/
+
+.item_area.center {
+  justify-content: center;
+}
+
+.item_area.left {
+  justify-content: flex-start;
+}
+
+.item_area.center .col4,
+.item_area.left .col4,
+.item_area.center .col {
+  margin-right: 1.2%;
+}
+
+.item_area.center .col4:last-child,
+.item_area.left .col4:last-child {
+  margin-right: 0;
+}
+
+.item_area.center .col {
+  margin-right: 8%;
+}
+
+.item_area.center .col:nth-child(2n) {
+  margin-right: 0;
+}
+
+.item_area .data_box .btn .a {
+  font-size: 1.1rem;
+}
+
+
+/*ココマデ*/
+
+.special.onenga_2023 {
+  background-color: #fdfdf5;
+  color: #524748;
+  background-image: url(https://shop.senkien.jp/images/onenga/2023/2023og_bg.jpg);
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.special.onenga_2023 .mv {
+  height: 45vw;
+  margin-bottom: 3rem;
+}
+
+.special.onenga_2023 .mv .bg {
+  background: url(https://shop.senkien.jp/images/onenga/2023/2023og_fv.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.onenga_2023 .main_catch h1 {
+  font-family: 'Noto Serif JP', serif;
+  color: #c9171e;
+  margin-bottom: 2rem;
+}
+
+.onenga_2023 .main_catch .text {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.onenga_2023 .main_catch .text span {
+  margin-bottom: .5rem;
+}
+
+.onenga_2023 .main_catch .text.box {
+  background: #e98974;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.onenga_2023 .item_list .ph {
+  margin-bottom: 2rem;
+}
+
+.onenga_2023 .sec_ttl {
+  color: #da654a;
+  font-family: 'Noto Serif JP', serif;
+  background: url(https://shop.senkien.jp/images/onenga/2023/bg_sec_ttl.png) no-repeat bottom;
+  background-size: 74%;
+  line-height: 8rem;
+}
+
+.onenga_2023 .item_list .sec_ttl {
+  margin-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+.onenga_2023 .ranking .sec_ttl {
+  color: #fff;
+  line-height: 3rem;
+}
+
+.onenga_2023 .anchor3 .cont_wrap .col .right {
+  background: linear-gradient(45deg, #cdb657 25%, transparent 25%, transparent 75%, #cdb657 75%), linear-gradient(45deg, #cdb657 25%, transparent 25%, transparent 75%, #cdb657 75%);
+  background-color: #d3be6a;
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.onenga_2023 .anchor3 .cont_wrap .col a {
+  color: #fff;
+}
+
+.special.onenga_2023 .l-reason .sec_ttl {
+  color: #c9171e;
+  border: 1px solid #c9171e;
+  background: none;
+}
+
+.onenga_2023 .l-reason .sec_ttl {
+  color: #c9171e;
+  border: 1px solid #c9171e;
+  line-height: 3rem;
+}
+
+.onenga_2023 .l-reason-box dt {
+  color: #c9171e;
+}
+
+.onenga_2023 .l-reason-box .num {
+  color: #c9171e;
+}
+
+.onenga_2023 .l-reason-box {
+  padding: 1.6rem 4.5rem;
+  width: 50%;
+  border-bottom: #c9171e 1px solid;
+}
+
+.onenga_2023 .wrapping .ph {
+  width: 80%;
+  margin: 0 auto 8rem;
+}
+
+.onenga_2023 .wrapping .ph .text {
+  text-align: right;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #da654a;
+}
+
+.onenga_2023 .ranking {
+  margin-bottom: 8rem;
+}
+
+.onenga_2023 .ranking_list li {
+  width: 20%;
+  padding: .7rem;
+}
+
+.onenga_2023 .bg_ranking {
+  width: 100%;
+  padding: 4rem 0 3rem;
+  background: linear-gradient(45deg, #cdb657 25%, transparent 25%, transparent 75%, #cdb657 75%), linear-gradient(45deg, #cdb657 25%, transparent 25%, transparent 75%, #cdb657 75%);
+  background-color: #d3be6a;
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+}
+
+.onenga_2023 .ranking .sec_ttl,
+.onenga_2023 .ranking_list span {
+  color: #fff;
+  background: none;
+}
+
+.onenga_2023 .ranking_list p {
+  background: #c9171e;
+}
+
+.onenga_2023 .item_list .item_area .col {
+  margin-bottom: 6rem;
+}
+
+.onenga_2023 .item_list.onenga_sp .item_area .col {
+  margin-bottom: 4rem;
+}
+
+.onenga_2023 .item_area .data_box {
+  color: #524748;
+}
+
+.item_area .data_box .price {
+  font-size: 1.2rem;
+}
+
+.onenga_2023 .item_area .data_box .btn {
+  background: #C8AE45;
+}
+
+.onenga_2023 .item_list .sec_lead {
+  color: #6b5f32;
+  margin-top: .5rem;
+  margin-bottom: 6rem;
+}
+
+.onenga_2023 .item_list.goodfortunetea .sec_lead p {
+  margin-bottom: 1rem;
+}
+
+.onenga_2023 .tea,
+.onenga_2023 .baked_sweets {
+  margin-bottom: 6rem;
+}
+
+.onenga_2023 .goodfortunetea {
+  margin-bottom: 3rem;
+}
+
+.onenga_2023 .onenga_sp {
+  padding-bottom: 3rem;
+}
+
+.onenga_2023 .flesh_sweets {
+  margin-bottom: 6rem;
+}
+
+.onenga_2023 h3 {
+  margin: 0 0 .8rem;
+  line-height: 2.4;
+  border-bottom: 3px double #c9171e;
+  font-size: 1.3rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.onenga_2023 .h3_txt {
+  margin-bottom: 2rem;
+}
+
+.onenga_2023 .petit_gifts .ph,
+.onenga_2023 .soba .ph,
+.onenga_2023 .tea .ph {
+  text-align: center;
+  background: url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_mizuhiki.jpg) center no-repeat;
+  background-position: bottom;
+  padding-bottom: 3rem;
+  background-size: 60%;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.onenga_2023 .ph span {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 2.4;
+  font-family: "Open Sans", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+.onenga_2023 .by_category .sec_ttl,
+.onenga_2023 .by_price .sec_ttl {
+  color: #543f32;
+  background: none;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.onenga_2023 .selection h2 span {
+  color: #6b5f32;
+}
+
+.onenga_2023 .by_price .cat_ttl {
+  color: #6b5f32;
+}
+
+.onenga_2023 .item_wrap a:hover {
+  opacity: 1;
+  color: #A8912C;
+}
+
+.onenga_2023 .by_price .cat_ttl:hover {
+  color: #fff;
+}
+
+.onenga_2023 .by_price.item_list .item_area .col:hover {
+  background-color: #e98974;
+}
+
+.onenga_2023 .by_price.item_list .item_area .col {
+  border: 1px solid #6b5f32;
+}
+
+.onenga_2023 .selection {
+  background: #ebcbc4;
+  padding: 2rem 0 5rem;
+}
+
+.onenga_2023 .item_wrap a .pkg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.onenga_2023 .item_wrap a .pkg:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.6;
+}
+
+.onenga_2023 .item_wrap a .data_box {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.onenga_2023 .item_wrap a .data_box:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 1;
+  color: #A8912C;
+}
+
+.onenga_2023 .column,
+.onenga_2023 .service {
+  background: #fff;
+}
+
+.onenga_2023 .column h3 {
+  background-color: #c9171e;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.onenga_2023 .column h3:after {
+  border-top: 15px solid #c9171e;
+}
+
+.com-arrow-list-basic {
+  li a:before,
+  li span:before {
+    background-color: #c9171e;
+  }
+}
+
+h2 {
+  font-family: Shuei NijimiMGo B, dnp-shuei-mgothic-std, sans-serif;
+  color: #524748;
+}
+
+.com-qa-accordion-list {
+  .accordion:before,
+  .accordion:after,
+  .mod-icon-plus:before,
+  .mod-icon-plus:after {
+    background-color: #c9171e;
+  }
+  a {
+    color: #3c3c3c !important;
+  }
+}
+
+// カート
+.cartjs_cart_in {
+  padding: 15px;
+  background: #880d1b;
+  border-radius: 8px;
+  input {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    background: none;
+    text-decoration: none;
+    border: none;
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+#ranking {
+  .cartjs_product_img {
+    background: none !important;
+    margin-bottom: 0 !important;
+  }
+  .cartjs_product_name {
+    color: #fff;
+  }
+  .cartjs_product_table {
+    table {
+      border-top: 1px solid #fff !important;
+      border-right: 1px solid #fff !important;
+    }
+    th,
+    td {
+      border-left: 1px solid #fff !important;
+      border-bottom: 1px solid #fff !important;
+      font-weight: normal;
+      color: #fff !important;
+      font-size: 1.2rem;
+      input {
+        text-align: center;
+        height: 2.3em;
+      }
+    }
+    td {
+      height: 3.3em;
+    }
+  }
+}
+
+.item_list {
+  .cartjs_product_name {
+    color: #524748 !important;
+    min-height: 2.8em;
+    font-weight: normal !important;
+    text-align: center !important;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -25px;
+
+    &:hover {
+      color: #880d1b !important;
+      cursor: pointer;
+    }
+  }
+  // .cartjs_product_table {
+  //   margin-top : -30px;
+  // }
+  .cartjs_product_img {
+    margin-bottom: 20px !important;
+    background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/first-bg.png) center 0 repeat !important;
+    background-size: 2.5% auto;
+    width: 130%;
+    border-radius: 10px;
+    img {
+      padding: 20px;
+    }
+  }
+  .cartjs_cart_in {
+    width: 50%;
+    margin: auto;
+  }
+  .col4 {
+    .cartjs_cart_in {
+      width: 100% !important;
+    }
+  }
+}
+
+.data_box {
+  // .cartjs_box {
+  //   max-width: 80%;
+  // }
+  .cartjs_option {
+    select {
+      height: 2.3em;
+      width: 8em;
+    }
+    option {
+      width: 8em;
+      white-space: normal;
+    }
+  }
+  .cartjs_product_table table {
+    width: 100% !important;
+  }
+}
+
+.ranking {
+  .data_box {
+    margin-top: 20px;
+    .cartjs_box {
+      max-width: 100% !important
+    }
+  }
+  .cartjs_product_num {
+    td {
+      padding: 0 !important;
+    }
+    input {
+      width: 100px !important;
+    }
+  }
+  .cartjs_cart_in {
+    background: #F6F3EA;
+    input {
+      color: #243c5c !important;
+      height: 2.3em;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.com-button-blank a,
+.com-button-pdf a,
+.com-button-default a {
+  color: #880d1b;
+  border: solid 2px #880d1b;
+}
+
+.com-button-default a {
+  &:before,
+  &::after {
+    background-color: #880d1b;
+  }
+}
+
+.l-reason-box {
+  dd {
+    span {
+      display: block;
+      font-size: 1.4rem !important;
+      line-height: 2.2;
+    }
+  }
+}
+
+.maker {
+  background: linear-gradient(transparent 52%, #e9d2d5 65%);
+  width: fit-content;
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 10;
+}
+
+.ranking_list {
+  .slick-prev,
+  .slick-next {
+    width: 45px;
+    height: 45px;
+    background: #F6F3EA;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 100%;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.6;
+    }
+    &::before {
+      content: "\f105" !important;
+      font-family: FontAwesome !important;
+      line-height: 45px;
+      color: #243c5c;
+    }
+    &:hover,
+    &:focus,
+    &:hover {
+      background: #F6F3EA;
+    }
+  }
+  .slick-prev {
+    &::before {
+      content: "\f104" !important;
+    }
+  }
+  .slick-next {
+    right: -80px;
+    top: 30%;
+  }
+  .slick-prev {
+    left: -80px;
+    top: 30%;
+  }
+}
+
+
+/* sp
+------------------------------------------------------------ */
+
+@media screen and (max-width: 811px) {
+  /* -------------------------------------------------------------------------------------
+
+    特集ページ
+
+  ------------------------------------------------------------------------------------- */
+  .special .container {
+    width: calc(100% - 10rem);
+    max-width: 1024px;
+    margin: 0 auto;
+    width: calc(100% - 2rem);
+    height: 100%;
+    position: relative;
+  }
+
+  .special .l-reason .sec_ttl rt {
+    font-size: 40%;
+  }
+  .special .l-reason-box {
+    padding: .8rem .2rem;
+    width: 100%;
+    border-bottom: #707070 1px solid;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .special .l-reason-box .num {
+    height: 2.5rem;
+    font-size: 2.5rem;
+  }
+
+  .bg_ranking {
+    background-color: #ccebf4;
+    width: 100%;
+    padding: 2rem 0 2rem;
+  }
+  .rank {
+    position: relative;
+  }
+  .rank p {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    margin: 0;
+    color: white;
+    background: #FFC408;
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 10px 15px;
+  }
+  .rank img {
+    width: 100%;
+  }
+  .ranking .sec_view {
+    height: 28vw;
+    max-height: 400px;
+    margin-bottom: 8rem;
+  }
+  .ranking .sec_ttl {
+    margin-bottom: 1.6rem;
+  }
+  .ranking .sec_lead {
+    margin: 3rem 0 6rem;
+  }
+  .ranking_list li {
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    padding: 1rem;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .ranking_list li:hover {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0.6;
+  }
+
+  .item_list .sec_lead {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .item_area .pkg {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .item_area.row .col.right {
+    margin-left: 6%;
+  }
+  .item_list .item_area.row .col {
+    margin-bottom: 0;
+  }
+  .item_list .item_area .col {
+    width: 100%;
+  }
+  .hiyahiya.item_list .item_area .col,
+  .tea_sweets.item_list .item_area .col,
+  .soba.item_list .item_area .col {
+    margin-bottom: 2rem;
+  }
+  .item_area {
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .item_area a {
+    color: #403d3c;
+    text-decoration: none;
+  }
+  .item_area .data_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .item_area .item_ttl {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .item_area .data_box .data {
+    font-size: 1.4rem;
+  }
+  // .item_area .data_box .price {
+  //   font-size: .8rem;
+  //   margin-top: .4rem;
+  //   width: 100%;
+  // }
+  // .item_area .data_box {
+  //   /*margin-top: 2rem;*/
+  //   width: 100%;
+  // }
+  // .item_area .data_box .name {
+  //   font-size: 1.9rem;
+  //   margin-bottom: 1rem;
+  //   width: 100%;
+  // }
+  .item_area .data_box .btn {
+    width: 72%;
+    height: 50px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-color: #006284;
+    margin: 2rem auto 0;
+    border-radius: 6px;
+  }
+  .item_area .data_box .btn .a {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+  }
+  .item_area .data_box .btn:hover {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0.6;
+  }
+  .item_area .data_box .btn .a .arrow {
+    right: 3rem;
+    position: absolute;
+    display: inline-block;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .item_area .data_box .btn .a .arrow:before {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 7px;
+    height: 7px;
+    left: 6px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .arrow:before,
+  .arrow:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+  }
+  .limited .item_area {
+    margin-bottom: 2rem
+  }
+  .hiyahiya {
+    margin-bottom: 2rem;
+  }
+  .limited {
+    margin-bottom: 2rem;
+  }
+  .tea_sweets {
+    margin-bottom: 2rem;
+  }
+  .anchor,
+  .anchor2,
+  .l-reason,
+  .ranking {
+    margin-bottom: 3rem;
+  }
+  .item_list .btn_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .item_list.soba {
+    margin-bottom: 2rem;
+  }
+  .service {
+    padding: 1rem 0 5rem;
+    margin-bottom: 2rem;
+  }
+  .service .attention {
+    font-size: 1.8rem;
+    margin-top: 6rem;
+    text-align: center;
+    color: #3e3a39;
+  }
+  .service .notes {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: #ff0044;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 80px;
+    color: #fff;
+  }
+  .notes {
+    text-align: center;
+    font-weight: bold;
+  }
+  .special .caption {
+    width: 100%;
+    text-align: left;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+  }
+  /*column*/
+  .column {
+    padding: 4rem 0;
+  }
+  .column .ph {
+    margin-bottom: 2.2rem;
+  }
+  .column .sec_lead {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  .column .sec_lead p {
+    line-height: 1.5em;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .column h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-indent: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding: 0.6em;
+    background: #FFC408;
+  }
+  .column h3:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #FFC408;
+    width: 0;
+    height: 0;
+  }
+  .column .text_column p {
+    line-height: 1.8em;
+    margin-bottom: 3rem;
+  }
+  .column p span {
+    font-weight: bold;
+  }
+  /*notification*/
+  .special .notification {
+    text-align: left;
+    display: block;
+    margin: 0 auto 2rem;
+    line-height: 1.8em;
+    padding-top: 1rem;
+  }
+  .special .col_not {
+    border-top: 3px double #006284;
+    border-bottom: 3px double #006284;
+    width: 100%;
+    padding: 1rem;
+  }
+  .special .notification p {
+    margin-bottom: 1rem;
+  }
+  .special .notification span {
+    font-weight: bold;
+  }
+  .special .notification .linear {
+    font-weight: normal;
+    background: #FFFF00;
+    display: inline-block;
+  }
+  .special .notification .ttl_not {
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    color: #006284;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+  .special .notification .caution {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .ranking_list.img_circle li img {
+    border-radius: 50%;
+    border: #fff 2px solid;
+    width: 80%;
+    height: 80%;
+  }
+  .summer_gifts .rank p {
+    font-size: 1.4rem;
+    font-family: 'Noto Serif JP', serif;
+    background: #329AD2;
+    left: 0px;
+  }
+  .summer_gifts .ranking_list a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .summer_gifts .ranking_list span {
+    margin-top: 1rem;
+    font-size: .9rem;
+  }
+  .summer_gifts .text.sec_lead p span {
+    margin-bottom: 1rem;
+  }
+  p.ribbon {
+    display: inline-block;
+    z-index: 2;
+    margin-left: -80px !important;
+    width: 28px !important;
+    text-align: center;
+    padding: 5px 7px 7px 7px;
+  }
+  p.ribbon:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border-bottom: 10px solid transparent;
+  }
+  p.ribbon.gold {
+    background: #EFC433;
+  }
+  p.ribbon.gold:after {
+    border-left: 14px solid #EFC433 !important;;
+    border-right: 14px solid #EFC433 !important;;
+  }
+  p.ribbon.silver {
+    background: #b2b2b2;
+  }
+  p.ribbon.silver:after {
+    border-left: 14px solid #b2b2b2 !important;;
+    border-right: 14px solid #b2b2b2 !important;;
+  }
+  p.ribbon.bronz {
+    background: #C1AB8C;
+  }
+  p.ribbon.bronz:after {
+    border-left: 14px solid #C1AB8C !important;;
+    border-right: 14px solid #C1AB8C !important;;
+  }
+  .tea .item_area {
+    margin-bottom: 0;
+  }
+  .info_sg {
+    margin-bottom: 4rem;
+  }
+  .info_sg li {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .btn_more {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn_more a {
+    color: #329AD2;
+    padding: 1.5rem 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #329AD2;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  /*カテゴリから選ぶ・予算から選ぶ*/
+  .summer_gifts .selection {
+    background: #f4f2e8;
+    padding: 2rem 0 5rem;
+  }
+  .by_category {
+    padding-bottom: 2rem;
+  }
+  .by_category .container {
+    border-bottom: 1px dotted #403d3c;
+    padding-bottom: 3rem;
+  }
+  .selection h2 span {
+    color: #329AD2;
+    line-height: 2rem;
+  }
+  .by_category.item_list .item_area .col {
+    width: 48%;
+    margin-bottom: 2rem;
+  }
+  .by_category .pkg {
+    margin-bottom: .5rem;
+  }
+  .selection .item_list .sec_ttl {
+    padding: 2rem 0 0;
+  }
+  .selection .cat_ttl {
+    text-align: center;
+    align-items: center;
+    font-size: .8rem;
+  }
+  .by_price .cat_ttl {
+    color: #329AD2;
+    padding: 1rem 0;
+    transition: 0.3s;
+  }
+  .by_price .cat_ttl:hover {
+    color: #fff;
+    transition: 0.3s;
+  }
+  .by_price.item_list .item_area .col {
+    width: 48%;
+    margin-bottom: .5rem;
+    border: 1px solid #329AD2;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  .by_price.item_list .item_area .col:hover {
+    background-color: #329AD2;
+    transition: 0.3s;
+  }
+  /*---------------
+  　　敬老ギフト2022
+  ---------------*/
+  /*共通*/
+  .main_catch {
+    padding: 0 0 2rem;
+  }
+  .ranking_list.img_radius img {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  /**/
+  .item_list .item_area .col_im {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .item_list .item_area .col_im .data_box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .item_list .item_area .col_im .item_ttl {
+    font-size: 1rem;
+    line-height: 1.2em;
+  }
+  .item_list .item_area .col_im .item_ttl span {
+    font-size: 80%;
+  }
+  .item_area .col_im .pkg {
+    margin-bottom: 1rem;
+  }
+  .tea .item_area .col_im .pkg {
+    margin-bottom: 1rem;
+  }
+  .item_area .col_im .item_ttl {
+    margin-bottom: .8rem;
+  }
+  .item_list .item_area .col_im .data_box .data {
+    font-size: .8rem;
+  }
+  .item_area .col_im .data_box .price {
+    margin-top: 0;
+  }
+  .item_area .col_im .data_box .btn {
+    width: 75%;
+    height: 50px;
+    margin: 1rem auto 0;
+    border-radius: 5px;
+  }
+  .item_area .col_im .data_box .btn .a {
+    font-size: 1.1rem;
+  }
+  /**/
+  .anchor .cont_wrap {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .anchor2 .cont_wrap .col {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .anchor2 .cont_wrap .col .a {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .anchor2 .cont_wrap {
+    margin: 0 auto 1rem;
+    width: 90%;
+  }
+  .anchor2 .item {
+    display: flex;
+    justify-content: space-around;
+    -ms-flex-pack: distribute;
+  }
+  .anchor2 .left {
+    width: 40%;
+  }
+  .anchor2 a {
+    text-decoration: none;
+  }
+  .anchor2 .right {
+    text-align: center;
+    font-size: .8rem;
+    width: 60%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .4rem;
+    line-height: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .special .swiper-button-prev {
+    background-image: url(https://shop.senkien.jp/common/img/prev.svg);
+    top: 30%;
+  }
+  .special .swiper-button-next {
+    background-image: url(https://shop.senkien.jp/common/img/next.svg);
+    top: 30%;
+  }
+  /*ココマデ*/
+  .special.keirou_gifts .special .mv {
+    height: 480px;
+  }
+  .special.keirou_gifts .mv .bg {
+    background: url(https://shop.senkien.jp/images/keirou/2022/fv_sp.jpg);
+    background: url(https://shop.senkien.jp/images/keirou/2022/2022kg_fv_sp_clean.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .special.keirou_gifts {
+    background: #f8f3e0;
+    background: #f9f7f1;
+    color: #524748;
+  }
+  .keirou_gifts .item_list {
+    margin-bottom: 1rem;
+  }
+  .keirou_gifts .main_catch h1 {
+    font-family: 'Noto Serif JP', serif;
+    padding-top: 2rem;
+  }
+  .keirou_gifts .main_catch h1 span {
+    color: #752100;
+  }
+  .keirou_gifts .sec_lead {
+    margin-bottom: 2rem;
+  }
+  .keirou_gifts .sec_ttl {
+    color: #752100;
+    font-size: 1.4rem;
+    font-family: 'Noto Serif JP', serif;
+    background: url(https://shop.senkien.jp/images/keirou/2022/bg_sec_ttl.png) no-repeat bottom;
+    background-size: 50%;
+  }
+  .keirou_gifts .item_list .sec_ttl {
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+  }
+  .l-reason .sec_ttl,
+  .ranking .sec_ttl,
+  .ranking_swiper .sec_ttl,
+  .selection .sec_ttl {
+    background: none;
+  }
+  .keirou_gifts .ranking .sec_ttl {
+    color: #fff;
+  }
+  .keirou_gifts .anchor2 .cont_wrap .col .right {
+    background: #f7c214;
+    border-radius: 0 5px 5px 0;
+  }
+  .keirou_gifts .anchor2 .cont_wrap .col .left img {
+    border-radius: 5px 0 0 5px;
+  }
+  .keirou_gifts .anchor2 .cont_wrap .col a {
+    color: #fff;
+    border-radius: 5px;
+  }
+  .keirou_gifts .l-reason .sec_ttl {
+    color: #ee7948;
+    border: 1px solid #ee7948;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+  }
+  .keirou_gifts .l-reason-box dt {
+    color: #ee7948;
+  }
+  .keirou_gifts .l-reason-box .num {
+    color: #ee7948;
+  }
+  .keirou_gifts .l-reason-box {
+    border-bottom: #ee7948 1px solid;
+  }
+  .keirou_gifts .ranking_list li {
+    width: 50%;
+    padding: .7rem;
+  }
+  .keirou_gifts .bg_ranking {
+    background-color: #ee7948;
+    width: 100%;
+    padding: 3rem 0 3rem;
+    width: 100%;
+    background: linear-gradient(45deg, #f0926a 25%, transparent 25%, transparent 75%, #f0926a 75%), linear-gradient(45deg, #f0926a 25%, transparent 25%, transparent 75%, #f0926a 75%);
+    background-color: #ee805d;
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+  }
+  .keirou_gifts .ranking .sec_ttl,
+  .keirou_gifts .ranking_list span {
+    color: #fff;
+  }
+  .keirou_gifts .ranking_list span {
+    font-size: .8rem;
+    text-align: center;
+  }
+  .keirou_gifts .rank p {
+    top: 0px;
+    left: -6px;
+    margin: 0;
+    color: white;
+    background: #ea5506;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 10px 15px;
+  }
+  .ranking_swiper .rank p.ribbon {
+    width: 40px;
+  }
+  .rank p.ribbon.gold {
+    background: #EFC433;
+  }
+  .rank p.ribbon.silver {
+    background: #b2b2b2;
+  }
+  .rank p.ribbon.bronz {
+    background: #C1AB8C;
+  }
+  .ranking_swiper .rank p.ribbon.gold:after {
+    border-left: 20px solid #EFC433;
+    border-right: 20px solid #EFC433;
+  }
+  .ranking_swiper .rank p.ribbon.silver:after {
+    border-left: 20px solid #b2b2b2;
+    border-right: 20px solid #b2b2b2;
+  }
+  .ranking_swiper .rank p.ribbon.bronz:after {
+    border-left: 20px solid #C1AB8C;
+    border-right: 20px solid #C1AB8C;
+  }
+  .keirou_gifts .ranking_swiper .rank-tit {
+    background-size: 60px 35px;
+  }
+  .keirou_gifts section.ranking_swiper {
+    margin-bottom: 3rem;
+  }
+  .keirou_gifts .ranking_swiper .sec_ttl {
+    margin-bottom: 1.6rem;
+  }
+  .keirou_gifts .ranking_swiper .sec_ttl {
+    color: #fff;
+  }
+  .keirou_gifts .ranking_swiper .rank {
+    overflow: visible;
+  }
+  .keirou_gifts .item_list .ph {
+    margin-bottom: 1.8rem;
+  }
+  .keirou_gifts .item_area a {
+    color: #524748;
+  }
+  .keirou_gifts .item_area .data_box .price {
+    color: #524748;
+    font-weight: bold;
+  }
+  .keirou_gifts .item_area .data_box .btn {
+    background: #ee7948;
+  }
+  .keirou_gifts .item_list .sec_lead {
+    color: #524748;
+    margin-top: .7rem;
+  }
+  .keirou_gifts .tea_sweets {
+    margin-bottom: 0;
+  }
+  .keirou_gifts .btn_more a {
+    color: #a73723;
+    background: none;
+    border: 1px solid #a73723;
+  }
+  .keirou_gifts .by_category .sec_ttl,
+  .keirou_gifts .by_price .sec_ttl {
+    color: #524748;
+  }
+  .keirou_gifts .selection h2 span {
+    color: #752100;
+  }
+  .keirou_gifts .by_price .cat_ttl {
+    color: #752100;
+  }
+  .keirou_gifts .item_wrap a:hover {
+    opacity: 1;
+  }
+  .keirou_gifts .by_price .cat_ttl:hover {
+    color: #fff;
+  }
+  .keirou_gifts .by_price.item_list .item_area .col:hover {
+    background-color: #f6b894;
+  }
+  .keirou_gifts .by_price.item_list .item_area .col {
+    border: 1px solid #752100;
+  }
+  .keirou_gifts .selection {
+    background: #fde8d0;
+    padding: 2rem 0 5rem;
+  }
+  .service {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+  .special.keirou_gifts .notification {
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  .special.keirou_gifts .notification .col_not {
+    border-top: 3px double #ee7948;
+    border-bottom: 3px double #ee7948;
+  }
+  .keirou_gifts .notification .ttl_not {
+    color: #ee7948;
+  }
+  /*---------------
+  　　冬ギフト2022
+  ---------------*/
+  /*共通*/
+  .item_list .item_area .col2 {
+    width: 46%;
+    margin: 0 auto 3rem;
+  }
+  .item_list .item_area .pkg {
+    margin-bottom: 1rem;
+  }
+  .item_list .item_area .col2 .data_box {
+    width: 100%;
+  }
+  winter_gifts .item_area .col2 .data_box .price {
+    font-size: .8rem;
+  }
+  .item_list .item_area .col2 .item_ttl {
+    font-size: .9rem;
+    line-height: 1.2em;
+    margin-bottom: .5rem;
+  }
+  .item_list .item_area .col2 .item_ttl span {
+    font-size: 80%;
+  }
+  .item_list .item_area .col2 .data_box .data {
+    font-size: .8rem;
+  }
+  .item_list .item_area .data_box .price {
+    margin-top: 0;
+  }
+  .item_area .col2 .data_box .btn {
+    width: 100%;
+    height: 40px;
+    margin: 1rem auto 0;
+    border-radius: 5px;
+  }
+  .item_area .col2 .data_box .btn .a {
+    font-size: .9rem;
+  }
+  /*ココマデ*/
+  .special.winter_gifts {
+    background-color: #fdfdf5;
+    color: #524748;
+    background-image: url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_bg_left.jpg), url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_bg_right.jpg);
+    background-position: left, right;
+    background-repeat: repeat-y, repeat-y;
+    height: 100%;
+    background-size: 60%;
+  }
+  .special.winter_gifts .mv {
+    margin-bottom: 2rem;
+    height: 400px;
+  }
+  .special.winter_gifts .mv .bg {
+    background: url(https://shop.senkien.jp/images/winter_gifts/2022/2022wg_fv_sp.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .winter_gifts .main_catch h1 {
+    font-family: 'Noto Serif JP', serif;
+    color: #880d1b;
+  }
+  .anchor .cont_wrap {
+    margin: 0 auto 1rem;
+    width: 80%;
+  }
+  .winter_gifts .sec_ttl {
+    font-size: 2.8rem;
+  }
+  .winter_gifts .item_list .sec_ttl {
+    margin-bottom: 2rem;
+  }
+  .l-reason .sec_ttl,
+  .ranking .sec_ttl,
+  .selection .sec_ttl {
+    background: none;
+  }
+  .winter_gifts .ranking .sec_ttl {
+    color: #fff;
+    font-size: 2.4rem;
+  }
+  .winter_gifts .anchor2 .cont_wrap .col .right {
+    color: #fff;
+    background-color: rgba(206, 185, 103, 0.4);
+    background-size: 20px 20px;
+    /* radial-gradientが適用されるサイズ */
+    background-repeat: repeat;
+    background-image: radial-gradient(closest-side, rgba(206, 185, 103, 0.9) 98%, rgba(206, 185, 103, 0.7) 100%), radial-gradient(circle at top left, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at top right, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom left, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom right, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%);
+    background-position: center;
+  }
+  .special.winter_gifts .l-reason .sec_ttl {
+    color: #880d1b;
+    border: 1px solid #880d1b;
+  }
+  .winter_gifts .l-reason .sec_ttl {
+    color: #880d1b;
+    border: 1px solid #880d1b;
+  }
+  .winter_gifts .l-reason-box dt {
+    color: #880d1b;
+  }
+  .winter_gifts .l-reason-box .num {
+    color: #880d1b;
+  }
+  .winter_gifts .l-reason-box {
+    border-bottom: #880d1b 1px solid;
+  }
+  .winter_gifts .bg_ranking {
+    width: 100%;
+     }
+  /*CEB967
+  // rgba(206,185,103)*/
+  // .winter_gifts .ranking_swiper .sec_ttl {
+  //   color: #fff;
+  // }
+  // .winter_gifts .ranking_swiper .sec_ttl {
+  //   margin-bottom: 1.6rem;
+  // }
+  // .winter_gifts .ranking_list span {
+  //   font-size: .8rem;
+  //   text-align: center;
+  // }
+  // .winter_gifts .ranking .sec_ttl,
+  // .winter_gifts .ranking_list span {
+  //   color: #fff;
+  // }
+  // .winter_gifts .rank p {
+  //   top: 0px;
+  //   left: -6px;
+  //   margin: 0;
+  //   color: white;
+  //   font-size: 1.1rem;
+  //   line-height: 1;
+  //   padding: 10px 15px;
+  //   background: #880d1b;
+  // }
+  // .winter_gifts section.ranking_swiper {
+  //   margin-bottom: 3rem;
+  // }
+  .winter_gifts .item_list .rec_no {
+    margin: 0 auto 1rem;
+    text-align: center;
+    width: 180px;
+    height: auto;
+  }
+
+  .winter_gifts .item_list .item_area .col2 {
+    width: 46%;
+  }
+  .winter_gifts .item_area .data_box {
+    color: #524748;
+  }
+  .winter_gifts .item_area .data_box .price {
+    color: #524748;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .winter_gifts .item_area .data_box .btn {
+    background: #880d1b;
+  }
+  .winter_gifts .item_list .item_area .col_im .data_box .data {
+    font-size: .8rem;
+    margin-bottom: 0.8rem;
+  }
+  .winter_gifts .item_list .sec_lead {
+    color: #524748;
+    margin-top: 2rem;
+  }
+  .winter_gifts .item_list.goodfortunetea .sec_lead p {
+    margin-bottom: 1rem;
+  }
+  .winter_gifts .item_list.goodfortunetea .sec_lead p span {
+    font-weight: bold;
+    background: linear-gradient(transparent 52%, #e9d2d5 65%);
+  }
+  .winter_gifts .item_list.goodfortunetea .item_area .data_box .price {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .winter_gifts .tea_sweets {
+    margin-bottom: 0;
+  }
+  .winter_gifts .petit_gifts,
+  .winter_gifts .soba {
+    margin-bottom: 3rem;
+  }
+  .winter_gifts .tea,
+  .winter_gifts .baked_sweets {
+    margin-bottom: 3rem;
+  }
+  .winter_gifts .goodfortunetea,
+  .winter_gifts .sweets_set {
+    margin-bottom: 3rem;
+  }
+  .bn_goodfortunetea {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 4rem;
+    text-align: center;
+  }
+  .bn_goodfortunetea a {
+    text-decoration: none;
+  }
+  .bn_goodfortunetea a {
+    text-decoration: none;
+    transition: .3s;
+  }
+  .bn_goodfortunetea a:hover {
+    opacity: 0.6;
+    transition: .3s;
+  }
+  .winter_gifts h3 {
+    margin: 0 0 .8rem;
+    line-height: 2.4;
+    border-bottom: 3px double #880d1b;
+    font-size: 1.2rem;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .winter_gifts .h3_txt {
+    margin-bottom: 2rem;
+  }
+  .winter_gifts .petit_gifts .ph,
+  .winter_gifts .soba .ph,
+  .winter_gifts .tea .ph {
+    padding-bottom: 2.8rem;
+    font-size: 1.6rem;
+  }
+  .winter_gifts .ph span {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2.4;
+    font-family: "Open Sans", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  }
+  .winter_gifts .by_category .sec_ttl,
+  .winter_gifts .by_price .sec_ttl {
+    color: #543f32;
+  }
+  .winter_gifts .selection h2 span {
+    color: #880d1b;
+  }
+  .winter_gifts .by_price .cat_ttl {
+    color: #880d1b;
+  }
+  .winter_gifts .item_wrap a:hover {
+    opacity: 1;
+    color: #880d1b;
+  }
+  .winter_gifts .by_price .cat_ttl:hover {
+    color: #fff;
+  }
+  .winter_gifts .by_price.item_list .item_area .col:hover {
+    background-color: #b86e79;
+  }
+  .winter_gifts .by_price.item_list .item_area .col {
+    border: 1px solid #880d1b;
+  }
+  .winter_gifts .selection {
+    background: #f1e5e0;
+    padding: 2rem 0 5rem;
+  }
+  .winter_gifts .item_wrap a .pkg {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .winter_gifts .item_wrap a .pkg:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0.6;
+  }
+  .winter_gifts .item_wrap a .data_box {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .winter_gifts .item_wrap a .data_box:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 1;
+    color: #880d1b;
+  }
+  .winter_gifts .column,
+  .winter_gifts .service {
+    background: #fff;
+  }
+  .winter_gifts .column h3 {
+    background-color: rgba(206, 185, 103, 0.5);
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: radial-gradient(closest-side, rgba(206, 185, 103, 0.9) 98%, rgba(206, 185, 103, 0.7) 100%), radial-gradient(circle at top left, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at top right, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom left, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%), radial-gradient(circle at bottom right, rgba(206, 185, 103, 0.6) 35%, rgba(255, 255, 255, 0) 35% 100%);
+    background-position: center;
+    border-bottom: none;
+    margin-bottom: 2rem;
+    line-height: 2;
+  }
+  .winter_gifts .column h3:after {
+    border-top: 15px solid #CEB967;
+  }
+
+  .ranking_swiper .swiper-wrapper {
+    z-index: 100;
+    position: relative;
+  }
+
+  .item_area .data_box .price {
+    font-size: 1rem;
+  }
+
+  /*-------------------
+  　　カテゴリページ
+  -------------------*/
+  /*共通*/
+  .re_cat .wrapper p,
+  .re_cat .list_wrapper p {
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat h2.cove-main {
+    margin: 2rem auto;
+    /*font-weight: normal;*/
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.6;
+  }
+  .re_cat .cove-txt.center p {
+    text-align: center;
+  }
+  .re_cat .cove-01 {
+    width: 100%;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat .cove-txt {
+    margin-bottom: 0;
+  }
+  .re_cat .cove-txt p {
+    font-size: .9rem;
+    line-height: 1.8em;
+    font-weight: 100;
+    margin-left: 0
+  }
+  .re_cat .wrapper {
+    width: 96%;
+    margin: 2rem auto 6rem;
+  }
+  .re_cat .item_list.wrapper {
+    margin: 2rem auto 1rem;
+  }
+  .re_cat .list_wrapper {
+    width: 96%;
+    margin: 2rem auto 3rem;
+  }
+  .re_cat .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .re_cat .white-btn a {
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat .black-btn {
+    background: none;
+    margin-left: 0;
+  }
+  .re_cat .black-btn a {
+    color: #fff;
+    background: #333;
+    padding: 4px 0;
+    font-size: 85%;
+    margin: .5rem 0 0;
+    width: 100%;
+  }
+  .re_cat .black-btn a {
+    color: #000;
+    background: none;
+    padding: 6px 0;
+    font-size: 85%;
+    margin: .5rem 0 0;
+    width: 100%;
+  }
+  .re_cat .line_up .black-btn a {
+    padding: 6px 0 7px;
+    width: 90%;
+    margin-left: 0;
+  }
+  .re_cat .black-btn p {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 20;
+  }
+  .re_cat .black-btn:hover p {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    -webkit-transform: translate(0%, -50%);
+    /* Safari用 */
+    transform: translate(0%, -50%);
+  }
+  .re_cat .recommend-sub {
+    margin: 0 auto;
+  }
+  .re_cat .recommend-sub li a {
+    padding: 0;
+    text-align: center;
+  }
+  .re_cat .recommend-sub li a img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .re_cat .recommend-sub.gr_2 ul {
+    margin: 0 auto;
+  }
+  .re_cat .recommend-sub.gr_2 li {
+    width: 48%;
+    margin: 0px 4% 6% 0;
+  }
+  .re_cat .recommend-sub.gr_2 li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .re_cat .recommend-sub li a {
+    font-size: 85%;
+    line-height: 1.4;
+    text-align: left;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat .recommend-sub li .price {
+    color: #444;
+    line-height: 2.2em;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat .recommend-sub li .black-btn a {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .re_cat .ttl_sec {
+    border: 1px solid #666;
+    padding: 14px;
+    width: 90%;
+    margin: 0 auto 3rem;
+    color: #333;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat .ttl_area {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat .item_list .item_area .col {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .re_cat .secret .item_list .item_area .data_box p {
+    font-size: 100%;
+  }
+  .re_cat .item_list .item_area .data_box {
+    position: relative;
+  }
+  .re_cat .item_list .item_area .data_box p {
+    /*font-size: 90%;*/
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .re_cat .line_up.item_list .item_area .data p {
+    font-size: 90%;
+  }
+  .re_cat .line_up .item_area .data p.item_ttl {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .re_cat .line_up .item_area .col {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .re_cat .line_up .item_area .col.right {
+    margin-left: 0;
+  }
+  .re_cat .line_up .item_area .pkg {
+    margin-bottom: 0;
+  }
+  .re_cat .line_up.item_list.wrapper {
+    margin: 2rem auto 6rem;
+  }
+  .re_cat .scene dd {
+    font-size: 90%;
+    text-align: center;
+    line-height: 1.4em;
+  }
+  .re_cat .scene dd.ttl_scene,
+  .re_cat dd.cs {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 2em;
+    border-bottom: 2px solid #d5ddbb;
+  }
+  /*チーズケーキ*/
+  .cheesecake .recommend-sub.gr_3 .flex {
+    justify-content: right;
+  }
+  .cheesecake .line_up .item_area .data_box .data {
+    font-size: 1rem;
+    padding: 8% 4% 8% 8%;
+  }
+  .matchamaru {
+    background: #D5DDBB;
+    color: #333;
+  }
+  .shiromaru {
+    background: #f7e2bb;
+    color: #333;
+  }
+  .kuromaru {
+    background: #c5c6c5;
+    color: #333;
+  }
+  .cheesecake .secret p span {
+    font-size: 110%;
+    background: linear-gradient(transparent 80%, #ffec47 80%);
+    font-weight: bold;
+  }
+  /*ほうじ茶*/
+  .houjicha_autumn .item_area .data_box .data {
+    margin-bottom: 2rem;
+  }
+  .houjicha_autumn .item_area a {
+    color: #fff;
+  }
+  .houjicha_autumn .black-btn a {
+    padding: 6%;
+  }
+  .houjicha_autumn .item_list {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .houjicha_autumn .cove-txt,
+  .houjicha_autumn .cove-01,
+  .houjicha_autumn .img-cove,
+  .houjicha_autumn .two-pho {
+    width: 96%;
+  }
+  .houjicha_autumn .cove-02,
+  .houjicha_autumn .cove-03 {
+    width: 90%;
+  }
+  .houjicha_autumn .mb-txt p {
+    margin-top: 20px;
+  }
+  .cove-txt p,
+  .mb-txt p {
+    line-height: 1.8;
+    letter-spacing: .05em;
+  }
+  /*大福茶*/
+  .obukucha.re_cat .cove-txt {
+    margin: 0 auto 50px;
+  }
+  /******************************/
+  /*50周年記念キャンペーンサイト*/
+  /******************************/
+  .special.anniversary {
+    background: none;
+    background-color: none;
+  }
+  .anniversary .mv {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    height: 320px;
+  }
+  .anniversary .mv .bg {
+    background-image: url(https://shop.senkien.jp/images/50thAnniversary/50th_cpn_fv_2.jpg);
+    background-position: center;
+  }
+  .anniversary .main_catch .text p {
+    margin-bottom: 1.4rem;
+  }
+  .anniversary .anchor {
+    margin-bottom: 0;
+  }
+  .anniversary .bg_anchor {
+    background: #68843B;
+    background: #8fa368;
+    padding: 2rem 0 2rem 1rem;
+  }
+  .anniversary .anchor_list li {
+    width: 100%;
+    padding: 0.7rem;
+    position: relative;
+  }
+  .anniversary .anchor_list a {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem 1rem .5rem;
+    transition: .3s;
+  }
+  .anniversary .anchor_list a {
+    text-decoration: none;
+  }
+  .cpn {
+    padding: 6rem 0;
+    background: #CBD4CB;
+  }
+  .anniversary .cpn_container {
+    width: calc(100% - 10rem);
+    max-width: 1120px;
+    margin: 0 auto 2rem;
+    width: calc(100% - 2rem);
+    height: 100%;
+    position: relative;
+    padding: 4rem 1rem;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .anniversary .item_list .sec_ttl {
+    color: #333;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.4;
+    font-size: 1.3rem;
+  }
+  .anniversary .item_list span {
+    color: #e80000;
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .anniversary .item_list .sec_lead {
+    font-family: "Open Sans", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background: #e80000;
+    padding: .2rem 2rem;
+    max-width: 100%;
+    margin: 0 auto 2rem;
+  }
+  .anc_cpn p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.4;
+    color: #333;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+  }
+  .anc_cpn p.circle {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    margin: 0;
+    color: white;
+    background: #FFC408;
+    background: #c3a84d;
+    font-size: 1rem;
+    display: inline-block;
+    z-index: 2;
+    width: 80px;
+    padding: 23px 0px 24px;
+    ;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    font-weight: normal;
+    line-height: .9;
+  }
+  .cpn_no p.circle {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    margin: 0;
+    color: white;
+    background: #c3a84d;
+    font-size: 1.2rem;
+    display: inline-block;
+    z-index: 2;
+    width: 100px;
+    padding: 30px 10px 32px;
+    border-radius: 50%;
+    transform: none;
+    font-weight: normal;
+    line-height: .9;
+    text-align: center;
+  }
+  .anc_cpn p.circle span,
+  .cpn_no p.circle span {
+    font-size: 200%;
+    color: #fff;
+  }
+  .anc_cpn .fa-solid {
+    font-size: 1.4rem;
+  }
+  .anc_cpn p.em {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .anc_cpn p.em span {
+    color: #C21732;
+    color: #e80000;
+    font-size: 2rem;
+    /*border-bottom: 5px solid #FFC408;*/
+  }
+  .anniversary .item_list .item_area .col {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .anniversary .item_area .pkg {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .step-method {
+    background-color: #68843B;
+    background-color: #8fa368;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    padding: 1rem 0;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .step-method::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #68843B;
+    background-color: #8fa368;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .anniversary .cove-txt {
+    width: 100%;
+  }
+  .anniversary .cove-txt.ex p {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    color: #4e5e2e;
+    line-height: 1.6;
+  }
+  .anniversary .item_list .cove-txt.ex p span {
+    font-size: 110%;
+    text-decoration: underline solid 5px #F9EB7D;
+    font-weight: bold;
+    color: #4e5e2e;
+    padding-bottom: -5px;
+  }
+  .anniversary .item_area .data {
+    text-align: center;
+  }
+  .anniversary .anchor_list a.end:hover {
+    border: 6px solid #ddd;
+  }
+  .anniversary .item_list .end span {
+    color: #333;
+  }
+  .anniversary .cpn_end {
+    position: absolute;
+    width: 80%;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background: #e80000;
+    padding: 1rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  //
+  .anchor.anchor3 .cont_wrap {
+    display: block;
+  }
+  .anchor3 {
+    .cont_wrap .col {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+
+  .item_list .item_area .col3,
+  .item_list .item_area .col4 {
+    width: 48%;
+
+    .cartjs_product_table table {
+      margin-top: -42px !important;
+      td,
+      th {
+        display: block;
+      }
+    }
+
+    .data_box .cartjs_box {
+      max-width: 100%;
+    }
+
+    .cartjs_cart_in {
+      padding: 6px;
+    }
+  }
+
+  .cs-bg-01.item_area .pkg {
+    background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/cs-bg-01.png) !important;
+    background-size: 100% auto !important;
+  }
+
+  .item_list .cartjs_cart_in {
+    width: 100%;
+  }
+
+  .cartjs_cart_in input {
+    padding: 6px;
+  }
+
+  .item_list .ph {
+    margin-bottom: 2rem;
+  }
+
+  .winter_gifts .l-reason-box .cs-tel span:after {
+    left: 22%;
+    bottom: 75px;
+    top: auto;
+  }
+  .ranking_list .slick-next,
+  .ranking_list .slick-prev {
+    display:none !important;
+  }
+  .data_box .cartjs_box {
+    max-width: 100%;
+  }
+
+  .cartjs_cart_in {
+    padding: 8px;
+  }
+
+  .item_list .cartjs_product_name {
+    min-height: 6.2rem;
+    word-break: normal;
+    display: block;
+  }
+}
+
+
+.cont_wrap {
+  .image-only {
+    .image {
+      background: url(https://cloud.senchasou.online/rakuten/assets/img/sale-banner/rei-sale-point.png) center 0 repeat;
+      background-size: 2.5% auto;
+      position: relative;
+      top: -19px;
+    }
+  }
+}
