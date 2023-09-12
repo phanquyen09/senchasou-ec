@@ -1,0 +1,515 @@
+.lay-global-nav-wrap {
+  top: 610px !important;
+}
+
+/* item list */
+.top-default-item-list li {
+  width: 340px;
+  margin: 0 40px 40px 0;
+}
+
+.top-default-item-list li:nth-child(3n) {
+  margin: 0 0 40px 0;
+}
+
+.top-default-item-list li a {
+  display: block;
+}
+
+.top-default-item-list li a:hover {
+  text-decoration: none;
+}
+
+.top-default-item-list li a .img-block {
+  margin: 0 0 28px;
+}
+
+.top-default-item-list li a .img-block img {
+  width: 340px;
+  height: auto;
+}
+
+.top-default-item-list li a .disc-block .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #009961;
+  line-height: 1.4;
+  padding-left: 32px;
+  margin: 0 0 12px;
+  position: relative;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.top-default-item-list li a:hover .disc-block .title {
+  color: #f5c105 !important;
+}
+
+.top-default-item-list li a .disc-block .title:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: #fdc906;
+  border-radius: 50%;
+}
+
+.top-default-item-list li a .disc-block .title:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 4px;
+  height: 4px;
+  border-top: 1px solid #fff !important;
+  border-right: 1px solid #fff !important;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.top-default-item-list li a .disc-block .text {
+  color: #3c3c3c;
+}
+
+.top-default-item-list li a .disc-block .date,
+.top-default-item-list li a .disc-block .sub-text {
+  color: #3c3c3c;
+  text-align: right;
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 1101px) {
+  #top #lay-footer {
+    background-image: none;
+    padding-top: 0;
+  }
+  #top #lay-main {
+    padding-bottom: 0;
+  }
+  /* title */
+  #lay-main .title-img {
+    margin: 0 0 20px;
+  }
+  #lay-main .section-information .title-img img {
+    width: 114px;
+    height: auto;
+  }
+  #lay-main .section-recommend .title-img img,
+  #lay-main .section-event .title-img img {
+    width: 113px;
+    height: auto;
+  }
+  #lay-main .ssection-useful .title-img img {
+    width: 75px;
+    height: auto;
+  }
+  #lay-main .ssection-voice .title-img img {
+    width: 54px;
+    height: auto;
+  }
+  #lay-main .ssection-pickup .title-img img {
+    width: 72px;
+    height: auto;
+  }
+  #lay-main .section-recipe .title-img img {
+    width: 62px;
+    height: auto;
+  }
+  #lay-main .section-useful .title-img img {
+    width: 65px;
+    height: auto;
+  }
+  #lay-main .section-voice .title-img img {
+    width: 54px;
+    height: auto;
+  }
+  #lay-main .section-pickup .title-img img {
+    width: 72px;
+    height: auto;
+  }
+  #lay-main .title-wrap {
+    margin: 0 0 22px;
+  }
+  #lay-main .title-wrap .title-main {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  #lay-main .title-wrap .catch {
+    font-size: 13px;
+  }
+  /* item list */
+  .top-default-item-list li {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .top-default-item-list li:nth-child(3n) {
+    margin: 0 0 20px 0;
+  }
+  .top-default-item-list li a .img-block {
+    margin: 0 0 14px;
+  }
+  .top-default-item-list li a .img-block img {
+    width: 100%;
+  }
+  .top-default-item-list li a .disc-block .title {
+    font-size: 13px;
+    padding-left: 32px;
+    margin: 0 0 12px;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .top-default-item-list li a:hover .disc-block .title {
+    color: #009961 !important;
+  }
+  .top-default-item-list li a .disc-block .title:before {
+    top: 0;
+  }
+  .top-default-item-list li a .disc-block .title:after {
+    top: 6px;
+  }
+  .top-default-item-list li a .disc-block .text {
+    font-size: 13px;
+  }
+  .top-default-item-list li a .disc-block .date,
+  .top-default-item-list li a .disc-block .sub-text {
+    font-size: 11px;
+  }
+}
+
+/* p
+============================================================ */
+.section-p-area {
+  padding: 0 0 80px;
+  position: relative;
+}
+
+.section-p-area .com-section-inner {
+  width: 1100px !important;
+  margin: 0 auto;
+}
+
+.section-p-area:before {
+  content: "";
+  background-color: #79D5FC;
+  width: 1920px;
+  height: 361px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.section-p-area .title-main {
+  margin: 0 0 36px;
+}
+
+.section-p-area .top-default-item-list li a .disc-block .title:before {
+  background-color: #009961;
+}
+
+.section-p-area .top-default-item-list li a .disc-block .title,
+.section-p-area .top-default-item-list li a .disc-block .sub-text {
+  color: #fff !important;
+}
+
+.section-p-area .top-default-item-list li a .disc-block .title:before {
+  background-color: #fdc906;
+}
+
+.section-p-area .com-button-default a:hover {
+  text-decoration: none;
+  background-color: #009961;
+  color: #fff;
+  border-color: #fff;
+}
+
+.section-p-area .js-slick {
+  height: 427px;
+}
+
+.section-p-area .js-slick .slick-slide {
+  max-width: 360px;
+}
+
+.section-p-area .ty-wysiwyg-content .ttl {
+  color: #fcfaf2;
+  font-family: Shuei NijimiMGo B, dnp-shuei-mgothic-std, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-p-area .ty-wysiwyg-content .ttl .price {
+  display: block;
+  color: #eb5050;
+}
+
+.section-p-area .ty-wysiwyg-content .ttl .price-tax {
+  color: #fcfaf2;
+  font-size: 14px;
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 1101px) {
+  .section-p-area {
+    padding: 40px 0 40px;
+    position: relative;
+    background: url(../img/top/section-voice-bg.png) center repeat;
+    color: #fff !important;
+  }
+  .section-p-area:before {
+    display: none;
+  }
+  .section-p-area .title-main {
+    margin: 0 0 36px;
+    color: #fff !important;
+  }
+  .section-p-area .catch {
+    color: #fff !important;
+  }
+  .section-p-area .top-default-item-list li a .disc-block .title:before {
+    background-color: #fdc906;
+  }
+  .section-p-area .com-button-default a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #009961;
+    border-color: #009961;
+  }
+  .section-p-area .top-default-item-list li a:hover .disc-block .title {
+    color: #fff !important;
+  }
+}
+
+.com-button-default {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.com-button-default.mgt30 {
+  margin: 30px auto 0;
+}
+
+/* section-recipe
+============================================================ */
+.section-recipe {
+  padding: 100px 0 150px;
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/common/section-recipe-bg-dot.png) center 0 repeat;
+  background-size: 8px auto;
+  margin: 0 0 0;
+  position: relative;
+}
+
+.section-recipe:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 328px;
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/common/section-recipe-bg-bottom.png) center 0 repeat-x;
+  background-size: 100% auto;
+}
+
+.section-recipe .title-parts {
+  width: 206px;
+  height: auto;
+  margin: 0 auto 20px;
+  text-align: center;
+  display: block;
+}
+
+.section-recipe .com-section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+}
+
+.section-recipe .com-section-inner:before {
+  content: "";
+  position: absolute;
+  bottom: 178px;
+  left: -115px;
+  width: 59px;
+  height: 338px;
+  height: 266px;
+  background: url(../img/joumon/section-recipe-parts-2-pc.png) center 0 repeat-x;
+  background-size: 59px auto;
+}
+
+.section-recipe .com-section-inner:after {
+  content: "";
+  position: absolute;
+  bottom: 178px;
+  right: -130px;
+  width: 78px;
+  height: 338px;
+  height: 266px;
+  background: url(../img/joumon/section-recipe-parts-1-pc.png) center 0 repeat-x;
+  background-size: 78px auto;
+}
+
+.section-recipe .text-block {
+  width: 440px;
+  background-color: #fcfaf2;
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/top/lucky-bag-bg.png) center 0 repeat-x;
+  padding: 50px 40px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section-recipe .text-block .title, .section-recipe .text-block .title-en {
+  color: rgba(158, 197, 67, 0.85);
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-recipe .text-block .title {
+  font-size: 28px;
+  margin: 30px 0 20px;
+}
+
+.section-recipe .text-block .title-en {
+  font-size: 60px;
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1;
+  position: relative;
+  margin: 0 0 26px;
+}
+
+.section-recipe .text-block .text {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-recipe .text-block .com-button-default {
+  margin: 28px auto 0;
+}
+
+.section-recipe .text-block .com-button-default a {
+  margin: 0 auto;
+}
+
+.section-recipe .com-icon-new {
+  background: none;
+  width: 85px;
+  height: 85px;
+  z-index: 2;
+}
+
+.section-recipe .img-block {
+  width: 280px;
+  background-color: #fff;
+}
+
+.section-recipe .img-block img {
+  width: 100%;
+  height: auto;
+}
+
+.section-recipe .img-block.item {
+  border-radius: 0 !important;
+}
+
+.title-parts {
+  border-radius: 50%;
+  width: 220px;
+  height: auto;
+  margin: 0 auto 20px;
+  text-align: center;
+  display: block;
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .section-recipe {
+    padding: 40px 0 40px;
+  }
+  .section-recipe:before {
+    display: none;
+  }
+  .section-recipe .com-section-inner {
+    display: block;
+  }
+  .section-recipe .com-section-inner:before {
+    content: "";
+    position: absolute;
+    bottom: 178px;
+    left: -115px;
+    width: 59px;
+    height: 338px;
+    height: 266px;
+    background: url(../img/joumon/section-recipe-parts-2-pc.png) center 0 repeat-x;
+    background-size: 59px auto;
+  }
+  .section-recipe .com-section-inner:after {
+    content: "";
+    position: absolute;
+    bottom: 178px;
+    right: -130px;
+    width: 78px;
+    height: 338px;
+    height: 266px;
+    background: url(../img/joumon/section-recipe-parts-1-pc.png) center 0 repeat-x;
+    background-size: 78px auto;
+  }
+  .section-recipe .text-block {
+    width: 100%;
+    padding: 20px 20px 20px;
+    margin: 0 0 20px;
+  }
+  .section-recipe .text-block .title {
+    font-size: 16px;
+    margin: 0 0 20px;
+    line-height: 1.6;
+  }
+  .section-recipe .text-block .title-en {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  .section-recipe .text-block .text {
+    font-size: 13px;
+  }
+  .section-recipe .text-block .com-button-default {
+    margin: 28px auto 0;
+  }
+  .section-recipe .text-block .com-button-default a {
+    margin: 0 auto;
+  }
+  .section-recipe .img-block {
+    width: 100%;
+    margin-right: 0;
+  }
+  .section-recipe .title-parts {
+    width: 30px;
+    margin: 0 auto 20px;
+  }
+}
+
+.section-gift {
+  margin-top: 60px;
+}
+
+.color-01 {
+  color: #eb5050 !important;
+}
+
+.text-block .title {
+  text-align: center;
+  margin: 0 0 20px;
+}
+/*# sourceMappingURL=top-bk.css.map */

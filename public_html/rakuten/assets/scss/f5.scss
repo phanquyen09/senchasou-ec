@@ -1,0 +1,957 @@
+@charset "utf-8";
+
+/*
+  File Name   : joumon.css
+  Description : コンテンツエリア関係 他
+*/
+
+/*
+============================================================ */
+
+.lay-global-nav-wrap {
+  display: none;
+}
+
+#lay-container {
+  padding: 0 0 0;
+}
+
+.js-main-is-fixed {
+  top: 480px !important;
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .js-main-is-fixed {
+    top: 260px !important;
+  }
+}
+
+/* com-kv-area-wrap
+============================================================ */
+
+.com-kv-area-wrap-bg {
+  height: 400px;
+  margin-top: 80px;
+}
+
+.com-page-title-wrap {
+  height: 400px;
+}
+
+.com-kv-area-wrap-bg:after {
+  display: none;
+}
+
+.com-page-title-wrap .title-jp {
+  font-size: 36px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .com-kv-area-wrap-bg {
+    height: 200px;
+    margin-top: 60px;
+  }
+
+  .com-page-title-wrap {
+    height: 200px;
+  }
+
+  .com-kv-area-wrap-bg:after {
+    display: none;
+  }
+
+  .com-page-title-wrap .title-jp {
+    font-size: 16px;
+  }
+}
+
+/* section-first
+============================================================ */
+#lay-header {
+  margin-top: -19px;
+}
+.section-first {
+  width: 100%;
+  margin: 0 !important;
+  padding: 85px 0 20px;
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/first-bg.png) center 0 repeat;
+  background-size: 2.5% auto;
+  position: relative;
+  top: -19px;
+
+  &:before {
+    background: none;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: auto;
+    bottom: -19px;
+    background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/first-bg-wave-top.png) center 0 repeat-x;
+    background-size: auto 20px;
+  }
+
+  > .com-section-inner {
+    position: relative;
+    margin-top: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      // background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/first-inner-bg.png) center 0 no-repeat;
+      background-size: 100% auto;
+      width: 100%;
+      z-index: 0;
+      height: 302px;
+      top: -20px;
+      left: 50%;
+    }
+  }
+
+  .text-box {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .title, .text, .text-right {
+    color: #009961;
+  }
+
+  .sub-title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    text-shadow: 0 0 14px #e6b422;
+    color: #C01A20;
+  }
+
+  .text {
+    font-size: 28px;
+    line-height: 2;
+    margin: 0 0 16px;
+    text-align: center;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .text-right {
+    text-align: right;
+    font-size: 14px;
+  }
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .com-section-inner {
+    width: 100% !important;
+  }
+
+  .section-first {
+    width: 100% !important;
+    margin: 19px 0 20px;
+    padding: 30px 0;
+    background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/first-bg.png) center 0 repeat;
+    background-size: 10% auto;
+    top: -19px;
+
+    > .com-section-inner {
+      margin-top: 40px;
+      &:before {
+        width: 100%;
+        height: 100%;
+        top: 70%;
+        left: 50%;
+      }
+    }
+
+    .text-box {
+      width: 50%;
+    }
+    .sub-title {
+      font-size: 12px;
+    }
+    .title {
+      font-size: 16px;
+      margin: 0 0 17px;
+    }
+
+    .text {
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 0 0 8px;
+
+      span {
+        font-size: 13px;
+      }
+    }
+
+    .text-right {
+      text-align: left;
+      font-size: 12px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+/* section-origin
+============================================================ */
+
+.section-origin {
+  margin: 0 0 0;
+
+  > .com-section-inner {
+    position: relative;
+    padding: 242px 0 0;
+  }
+
+  .left-box {
+    position: relative;
+    width: 820px;
+    background-color: rgba(252, 250, 242, 0.95);
+    padding: 50px 78px 50px 50px;
+    box-sizing: border-box;
+  }
+
+  .right-box {
+    position: absolute;
+    top: 113px;
+    right: 0;
+    width: 590px;
+    z-index: -1;
+  }
+
+  .left-box {
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #009961;
+      margin: 0 0 32px;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .img-block {
+      width: 162px;
+      position: absolute;
+      top: -70px;
+      right: 114px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .right-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .section-origin {
+    > .com-section-inner {
+      padding: 40px 0 0;
+    }
+
+    .left-box {
+      width: calc(100% - 40px);
+      padding: 25px 25px 25px 25px;
+    }
+
+    .right-box {
+      position: relative;
+      top: -20px;
+      left: 40px;
+      width: calc(100% - 40px);
+    }
+
+    .left-box {
+      .title {
+        font-size: 16px;
+        margin: 0 0 15px;
+      }
+
+      .text {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .img-block {
+        width: 80px;
+        position: absolute;
+        top: -27px;
+        right: 26px;
+      }
+    }
+  }
+}
+
+/* section-approach
+============================================================ */
+
+.section-approach {
+  position: relative;
+  padding: 150px 0 150px;
+  margin: 0 0 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 462px;
+    background: #fcfaf2;
+    z-index: -1;
+  }
+
+  .title-main-wrap {
+    width: auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #009961;
+    padding: 0 0 12px;
+    border-bottom: solid 1px #009961;
+    display: inline-block;
+    margin: 0 auto 50px;
+  }
+
+  .list-wrap {
+    li {
+      width: 340px;
+      margin: 0 40px 0 0;
+
+      &:last-child {
+        margin: 0 0 0 0;
+      }
+    }
+
+    .img-block {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      margin: 0 auto 50px;
+      position: relative;
+
+      .point {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1;
+        font-family: 'Oxygen', sans-serif;
+        padding: 6px 12px 6px;
+        background-color: #009961;
+        position: absolute;
+        bottom: 24px;
+        left: -30px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+
+    .text-block {
+      padding: 23px 20px 23px 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+
+      .text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .section-approach {
+    padding: 40px 0 10px;
+
+    &:before {
+      display: none;
+    }
+
+    .title {
+      font-size: 16px;
+      padding: 0 0 6px;
+      margin: 0 auto 25px;
+    }
+
+    .list-wrap {
+      background: #fcfaf2;
+      padding: 20px 20px 40px;
+
+      li {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+
+      .img-block {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 15px;
+
+        .point {
+          font-size: 12px;
+          padding: 6px 10px 6px;
+          bottom: 12px;
+          left: -15px;
+        }
+      }
+
+      .text-block {
+        padding: 16px 20px 16px 20px;
+        background-color: #fff;
+
+        .text {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+/* section-introduction
+============================================================ */
+
+.section-introduction {
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-introduction-bg.png) center 0 repeat;
+  background-size: 100% auto;
+  padding: 146px 0 202px;
+  margin: 0 0 0;
+
+  .title-main-wrap {
+    width: auto;
+    text-align: center;
+  }
+
+  > .com-section-inner {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -127px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      // background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-introduction-inner-bg.png) center 0 no-repeat;
+      background-size: 1675px auto;
+      width: 1675px;
+      height: 1100px;
+      opacity: .2;
+    }
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 0 12px;
+    border-bottom: solid 1px #fff;
+    display: inline-block;
+    margin: 0 auto 50px;
+  }
+
+  .content-item {
+    position: relative;
+    display: flex;
+
+    &.left-img {
+      justify-content: flex-end;
+      margin: 132px 0 0;
+    }
+
+    .img-block {
+      width: 770px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .text-block {
+      width: 606px;
+      position: relative;
+      top: 55px;
+      z-index: 1;
+
+      .title-en {
+        font-size: 55px;
+        font-weight: bold;
+        color: #fff;
+        font-family: 'Oxygen', sans-serif;
+        letter-spacing: 1px;
+        position: relative;
+        top: 6px;
+      }
+
+      .text-wrap {
+        padding: 32px 20px 40px 20px;
+        background-color: #fff;
+      }
+    }
+
+    .text-wrap .text {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .com-button-default {
+      margin: 24px 0 0;
+    }
+
+    &.left-img {
+      .text-block {
+        text-align: right;
+
+        .text {
+          text-align: left;
+        }
+      }
+
+      .img-block {
+        right: auto;
+        left: 0;
+      }
+
+      .com-button-default {
+        text-align: right;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .section-introduction {
+    background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-introduction-bg.png) center 0 repeat;
+    background-size: 400px auto;
+    padding: 40px 0 100px;
+    margin: 0 0 0;
+
+    > .com-section-inner:before {
+      top: 20px;
+      background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-introduction-inner-bg.png) center 0 no-repeat;
+      background-size: 380px auto;
+      width: 380px;
+      height: 600px;
+    }
+
+    .title {
+      font-size: 16px;
+      padding: 0 0 6px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .content-item {
+      &.left-img {
+        margin: 100px 0 0;
+      }
+
+      .img-block {
+        width: 100%;
+      }
+
+      .text-block {
+        width: calc(100% - 20px);
+        top: auto;
+        bottom: -60px;
+        margin: 0 auto;
+
+        .title-en {
+          font-size: 25px;
+          top: 3px;
+        }
+
+        .text-wrap {
+          padding: 20px 20px 20px 20px;
+          background-color: rgba(255, 255, 255, 0.75);
+        }
+      }
+
+      .text-wrap .text {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .com-button-default {
+        margin: 20px 0 0;
+      }
+
+      &.left-img {
+        .text-block {
+          text-align: right;
+
+          .text {
+            text-align: left;
+          }
+        }
+
+        .img-block {
+          right: auto;
+          left: 0;
+        }
+
+        .com-button-default {
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* section-recipe
+============================================================ */
+
+.section-recipe {
+  padding: 150px 0 150px;
+  background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-recipe-bg-dot.png) center 0 repeat;
+  background-size: 8px auto;
+  margin: 0 0 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 328px;
+    background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-recipe-bg-bottom.png) center 0 repeat-x;
+    background-size: 100% auto;
+  }
+
+  .com-section-inner {
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 178px;
+      left: -115px;
+      width: 59px;
+      height: 338px;
+      height: 266px;
+      background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-recipe-parts-2-pc.png) center 0 repeat-x;
+      background-size: 59px auto;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 178px;
+      right: -130px;
+      width: 78px;
+      height: 338px;
+      height: 266px;
+      background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-recipe-parts-1-pc.png) center 0 repeat-x;
+      background-size: 78px auto;
+    }
+  }
+
+  .text-block {
+    width: 440px;
+    background-color: #fcfaf2;
+    padding: 50px 40px 50px;
+    box-sizing: border-box;
+
+    .title, .title-en {
+      color: #009961;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 22px;
+      margin: 0 0 20px;
+    }
+
+    .title-en {
+      font-size: 60px;
+      font-family: 'Oxygen', sans-serif;
+      line-height: 1;
+      position: relative;
+      margin: 0 0 26px;
+    }
+
+    .text {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .com-button-default {
+      margin: 28px auto 0;
+
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .img-block {
+    width: 280px;
+    margin-right: 45px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.title-parts {
+  width: 66px;
+  height: auto;
+  margin: 0 auto 40px;
+  text-align: center;
+  display: block;
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .section-recipe {
+    padding: 40px 0 40px;
+
+    &:before {
+      display: none;
+    }
+
+    .com-section-inner {
+      display: block;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 178px;
+        left: -115px;
+        width: 59px;
+        height: 338px;
+        height: 266px;
+        background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-recipe-parts-2-pc.png) center 0 repeat-x;
+        background-size: 59px auto;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 178px;
+        right: -130px;
+        width: 78px;
+        height: 338px;
+        height: 266px;
+        background: url(https://cloud.senchasou.online/ectheme/theme03/img/f5/section-recipe-parts-1-pc.png) center 0 repeat-x;
+        background-size: 78px auto;
+      }
+    }
+
+    .text-block {
+      width: 100%;
+      padding: 20px 20px 20px;
+      margin: 0 0 20px;
+
+      .title {
+        font-size: 16px;
+        margin: 0 0 20px;
+        line-height: 1.6;
+      }
+
+      .title-en {
+        font-size: 20px;
+        margin: 0 0 10px;
+      }
+
+      .text {
+        font-size: 13px;
+      }
+
+      .com-button-default {
+        margin: 28px auto 0;
+
+        a {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .img-block {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .title-parts {
+      width: 30px;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+/* section-theme
+============================================================ */
+
+.section-theme {
+  margin: 0 0 0;
+
+  > .com-section-inner {
+    position: relative;
+    padding: 242px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .left-box {
+    position: relative;
+    width: 820px;
+    background-color: rgba(252, 250, 242, 0.95);
+    padding: 50px 50px 50px 50px;
+    box-sizing: border-box;
+  }
+
+  .right-box {
+    position: absolute;
+    top: 113px;
+    left: 0;
+    width: 590px;
+    z-index: -1;
+  }
+
+  .left-box {
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #009961;
+      margin: 0 0 32px;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 0 0 34px;
+    }
+
+    .img-block {
+      width: 214px;
+      position: absolute;
+      top: -62px;
+      right: 51px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .right-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .com-button-default {
+    margin: 0 0 0;
+  }
+}
+
+/* sp
+------------------------------------------------------------ */
+@media screen and (max-width: 811px) {
+  .section-theme {
+    > .com-section-inner {
+      padding: 20px 0 0;
+      display: block;
+    }
+
+    .left-box {
+      width: 100%;
+      padding: 25px 25px 25px 25px;
+    }
+
+    .right-box {
+      position: static;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .left-box {
+      .title {
+        font-size: 16px;
+        margin: 0 0 15px;
+      }
+
+      .text {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .img-block {
+        width: 80px;
+        position: absolute;
+        top: -11px;
+        right: 26px;
+      }
+    }
+  }
+}
+
+// .com-section-inner {
+//   width: 1100px !important;
+//   margin-bottom: 0;
+// }
+
+@import 'module/_f5part.scss';

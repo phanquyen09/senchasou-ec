@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,sBAAsB,AAAA,KAAK,CAAC;EAC1B,OAAO,EAAE,gBAAgB;CAC1B;;AAED,AAAA,eAAe,AAAA,cAAc;AAC7B,sBAAsB;AACtB,sBAAsB,AAAA,MAAM;AAC5B,oBAAoB;AACpB,eAAe;AACf,eAAe,AAAA,iBAAiB,CAAC;EAC/B,OAAO,EAAE,eAAe;CACzB",
+    "sources": [
+        "../scss/system.scss"
+    ],
+    "names": [],
+    "file": "system.css"
+}
