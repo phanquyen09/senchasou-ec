@@ -1,0 +1,855 @@
+<script>
+  document.styleSheets[0].disabled = true;
+  document.styleSheets[1].disabled = true;
+</script>
+<!-- 559063 -->
+<{if $tpl_name!="free6" }>
+<link rel="stylesheet" href="https://cloud.senchasou.online/ectheme/theme03/css/import.css?ver=20230712">
+<link rel="stylesheet" href="https://cloud.senchasou.online/ectheme/theme03/libs/customscrollbar/jquery.mCustomScrollbar.css">
+
+<{if $tpl_name != "free1" && $tpl_name|truncate:3:"" != "top"}>
+  <link rel="stylesheet" href="https://cloud.senchasou.online/ectheme/theme03/css/product.css">
+<{/if}>
+
+<{if $tpl_name != "free5"}>
+  <link rel="stylesheet" href="https://cloud.senchasou.online/ectheme/theme03/css/style.css?ver=20230712">
+<{/if}>
+
+<{if $tpl_name == "top" || $tpl_name == "free1"}>
+  <link type="text/css" rel="stylesheet" href="https://cloud.senchasou.online/ectheme/theme03/css/top.css?ver=20230714">
+<{/if}>
+
+<div class="js-overlay"></div>
+<!-- Start header-->
+
+<header id="lay-header">
+  <div class="lay-header-inner">
+    <p class="lay-head-logo">
+      <a href="/">
+        <span>
+          <img src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo-01.png" alt="千茶荘">
+        </span>
+      </a>
+    </p>
+    <nav class="lay-info-nav">
+      <ul class="mod-panel-layout">
+        <li class="nav-2"><a href="<{$sk_url}>#info">会社概要</a></li>
+        <li class="nav-3"><a href="<{$delivery_url}>">お買い物ガイド</a></li>
+        <li class="nav-1"><a href="<{$sk_url}>">特定商取引法</a></li>
+        <li class="nav-4"><a href="<{$view_inq_url}>">お問い合わせ</a></li>
+        <li class="nav-4">
+          <form action="<{$product_search_url}>" method="GET" class="l-header-search__form">
+            <{$product_search_mode}>
+            <div class="l-header-search__input">
+              <input type="text" name="keyword" placeholder="商品検索" />
+            </div>
+            <button class="l-header-search__submit" type="submit">
+              <p class="lay-search-btn-text icon-search"></p>
+            </button>
+          </form>
+        </li>
+
+        <{if $members_login_flg}>
+          <li class="nav-4 icon-mypage">
+            <a class="" href="<{$view_myaccount_url}>">マイページ</a>
+          </li>
+        <{else}>
+          <li class="nav-4 icon-regist">
+            <a class="lay-search-btn-text" href="<{$members_regi_url}>">新規会員登録</a>
+          </li>
+        <{/if}>
+      </ul>
+
+      <div class="lay-search-btn icon-none l-header-account">
+        <div class="l-dropdown-menu js-toggle-contents">
+          <div class="u-container">
+            <ul class="l-header-account-list">
+              <{if $members_use_flg}>
+                <{if !$members_login_flg}>
+                  <a class="lay-search-btn-text" href="<{$members_login_url}>">
+                    <li class="l-header-account-list__item icon-login">
+                      ログイン</a>
+                    </li>
+                  </a>
+
+                <{else}>
+                  <li class="l-header-account-list__item icon-logout">
+                    <a class="lay-search-btn-text" href="<{$members_login_url}>">ログアウト</a>
+                  </li>
+                <{/if}>
+              <{/if}>
+            </ul>
+          </div>
+        </div><!-- /.l-dropdown-menu -->
+      </div>
+
+      <div class="lay-search-btn icon-cart">
+        <{if $is_enable_async_cart_in_pc}>
+        <form name="cart_view_with_async" method="POST" action="<{$view_cart_url}>">
+          <{$view_cart_with_async_info}>
+        </form>
+        <button class="l-sp-header-cart-btn__link cart_view_with_async">
+          <span class="l-sp-header-cart-btn__count">
+            <span class="cart_count"><{$incart_total_count}></span>
+          </span>
+          <span class="lay-search-btn-text">カート</span>
+        </button>
+      <{else}>
+        <a href="<{$view_cart_url}>" class="l-sp-header-cart-btn__link">
+          <span class="l-sp-header-cart-btn__count">
+            <{$incart_total_count}>
+          </span>
+        </a>
+        <p class="lay-search-btn-text">カート</p>
+      <{/if}>
+      </div>
+    </nav>
+
+    <!-- SP member -->
+    <div class="l-sp-header-member-btn sp-only member">
+      <{if $members_use_flg}>
+        <{if !$members_login_flg}>
+          <{if $members_register_flg}>
+            <a href="<{$members_login_url}>" class="l-sp-header-cart-btn__link">
+              <span class="icon-member">新規会員登録</span>
+            </a>
+            <{else}>
+            <a href="<{$members_login_url}>" class="l-sp-header-cart-btn__link">
+              <span class="icon-login">ログイン</span>
+            </a>
+          <{/if}>
+        <{else}>
+          <a href="<{$view_myaccount_url}>" class="l-sp-header-cart-btn__link">
+            <span class="icon-member">マイページ</span>
+          </a>
+          <a href="<{$members_login_url}>" class="l-sp-header-cart-btn__link">
+            <span class="icon-member">ログアウト</span>
+          </a>
+        <{/if}>
+      <{/if}>
+    </div>
+
+    <!-- SP cart -->
+    <div class="l-sp-header-cart-btn sp-only">
+      <{if $is_enable_async_cart_in_pc}>
+        <form name="cart_view_with_async" method="POST" action="<{$view_cart_url}>">
+          <{$view_cart_with_async_info}>
+        </form>
+        <button class="l-sp-header-cart-btn__link cart_view_with_async">
+          <span class="icon-cart"></span>
+          <span class="l-sp-header-cart-btn__count">
+            <span class="cart_count"><{$incart_total_count}></span>
+          </span>
+        </button>
+      <{else}>
+        <a href="<{$view_cart_url}>" class="l-sp-header-cart-btn__link">
+          <span class="icon-cart"></span>
+          <span class="l-sp-header-cart-btn__count">
+            <{$incart_total_count}>
+          </span>
+        </a>
+      <{/if}>
+    </div>
+
+
+    <div class="lay-menuicon-btn--side-style sp-only js-toggle-nav-triger js-closed">
+      <span></span>
+      <span></span>
+      <span></span>
+      <p class="lay-menuicon-btn-text">メニュー</p>
+    </div>
+    <div class="lay-head-info">
+      <!-- <p>information</p> -->
+    </div>
+  </div>
+  <!-- ▼ pc-only ▼ -->
+  <div class="lay-global-nav-wrap">
+    <nav class="lay-global-nav">
+      <ul class="mod-panel-layout">
+        <li class="item-1">
+          <a href="/?mode=cate&csid=0&cbid=2818170">
+            <span>茶葉</span>
+          </a>
+          <div class="over-nav">
+            <div class="over-nav-inner">
+              <div class="title-wrap">
+                <p class="title">茶葉</p>
+                <p class="btn">
+                  <a href="/?mode=cate&csid=0&cbid=2818170">
+                    <span>茶葉一覧へ</span>
+                  </a>
+                </p>
+              </div>
+              <ul class="mod-panel-layout over-nav-list js-lineup">
+                <li>
+                  <a href="/?mode=cate&cbid=2818170&csid=1">
+                    <span>抹茶入り煎茶<span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818170&csid=2">
+                    <span>煎茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818170&csid=3">
+                    <span>ほうじ茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818170&csid=5">
+                    <span>健康茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818170&csid=6">
+                    <span>有機茶</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item-2">
+          <a href="/?mode=cate&csid=0&cbid=2818168">
+            <span>ティーバッグ</span>
+          </a>
+          <div class="over-nav">
+            <div class="over-nav-inner">
+              <div class="title-wrap">
+                <p class="title">ティーバッグ</p>
+                <p class="btn">
+                  <a href="/?mode=cate&csid=0&cbid=2818168">
+                    <span>ティーバッグ一覧へ</span>
+                  </a>
+                </p>
+              </div>
+              <ul class="mod-panel-layout over-nav-list js-lineup">
+                <li>
+                  <a href="/?mode=cate&cbid=2818168&csid=1">
+                    <span>抹茶入り煎茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818168&csid=2">
+                    <span>煎茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818168&csid=3">
+                    <span>ほうじ茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818168&csid=4">
+                    <span>和ハーブティー</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818168&csid=5">
+                    <span>有機茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2818168&csid=6">
+                    <span>健康茶</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item-3">
+          <a href="/?mode=cate&cbid=2827952&csid=0">
+            <span>パウダーティー</span>
+          </a>
+          <div class="over-nav">
+            <div class="over-nav-inner">
+              <div class="title-wrap">
+                <p class="title">パウダーティー</p>
+                <p class="btn">
+                  <a href="/?mode=cate&cbid=2827952&csid=0">
+                    <span>パウダーティー一覧へ</span>
+                  </a>
+                </p>
+              </div>
+              <ul class="mod-panel-layout over-nav-list js-lineup">
+                <li>
+                  <a href="/?mode=cate&cbid=2827952&csid=1">
+                    <span>抹茶</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/?mode=cate&cbid=2827952&csid=4">
+                    <span>ほうじ茶</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item-4">
+          <a href="/?mode=grp&gid=2882510" class="">
+            <span>抹茶入り煎茶</span>
+          </a>
+        </li>
+        <li class="item-5">
+          <a href="/?mode=grp&gid=2882515" class="">
+            <span>抹茶</span>
+          </a>
+        </li>
+        <li class="item-6">
+          <a href="/?mode=grp&gid=2882511" class="">
+            <span>煎茶</span>
+          </a>
+        </li>
+        <li class="item-7">
+          <a href="/?mode=grp&gid=2882512" class="">
+            <span>健康茶</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="lay-global-nav--side-style sp-only js-scroll-box">
+  <div class="lay-global-nav-inner">
+    <div class="lay-menuicon-btn-wrap">
+      <div class="lay-menuicon-btn-closed">
+        <span></span>
+        <span></span>
+        <span></span>
+        <p class="closed-text">閉じる</p>
+      </div>
+    </div>
+    <!-- End .lay-menuicon-btn-wrap -->
+
+    <div class="lay-main-nav-wrap">
+      <div class="lay-main-nav-block">
+        <ul>
+          <li class="nav-item-wrap category-products">
+            <span class="click-trigger">用途から選ぶ</span>
+            <div class="inner-wrap">
+              <p class="inner-title-link">
+                <a href="?mode=srh&keyword=" target="_blank">全て商品</a>
+              </p>
+              <ul>
+                <{section name=num loop=$group}>
+                <li>
+                  <a href="<{$group[num].link_url}>">
+                    <{$group[num].name}>
+                  </a>
+                </li>
+              <{/section}>
+              </ul>
+            </div>
+          </li>
+          <{assign var="cateNum" value=0}>
+
+          <{if $category|@count != 0}>
+            <{foreach from=$category item=cate name=cate}>
+            <{math equation="$cateNum + 1" assign="cateNum"}>
+              <li class="nav-item-wrap category-<{$cateNum}>">
+                  <span class="click-trigger"><{$cate.name}></span>
+                  <div class="inner-wrap">
+                    <p class="inner-title-link">
+                      <a href="<{$cate.link_url}>">全ての<{$cate.name}></a>
+                    </p>
+                    <ul>
+                      <{foreach from=$subcategory[$cate.bid] item=scate name=scate}>
+                        <li><a href="<{$scate.link_url}>"><{$scate.name}></a></li>
+                      <{/foreach}>
+                    </ul>
+                  </div>
+              </li>
+            <{/foreach}>
+          <{/if}>
+        </ul>
+      </div>
+    </div>
+    <!-- End .lay-main-nav-wrap -->
+    <div class="lay-bottom-nav-wrap">
+      <ul class="mod-panel-layout">
+        <li><a href="<{ $privacy_url }>">会社概要</a></li>
+        <li><a href="<{ $delivery_url }>">お買い物ガイド</a></li>
+        <li><a href="<{$sk_url}>">特定商取引法</a></li>
+        <li><a href="<{$view_inq_url}>">お問い合わせ</a></li>
+        <{if $members_login_flg}>
+          <li class="icon-mypage">
+            <a class="" href="<{$view_myaccount_url}>">マイページ</a>
+          </li>
+        <{else}>
+          <li class="icon-regist">
+            <a class="" href="<{$members_regi_url}>">新規会員登録</a>
+          </li>
+        <{/if}>
+      </ul>
+    </div>
+    <!-- End .lay-sub-nav-wrap -->
+  </div>
+</div>
+<!-- End header -->
+
+<!-- TOP demo -->
+<{if $tpl_name == "top" || $tpl_name == "free5" || $tpl_name == "free7" || $tpl_name == "free1"}>
+  <{if $tpl_name == "top" || $tpl_name == "free1"}>
+  <section class="com-kv-area-wrap-bg">
+    <{if $slideshow_html}>
+      <div class="slider">
+        <{$slideshow_html}>
+      </div>
+      <script type="text/javascript">
+        //<![CDATA[
+        $(function () {
+          $('#slider').bxSlider({
+            auto: true,
+            pause: 2000,
+            speed: 1000,
+            controls: false,
+            mode: 'fade',
+            pager: false
+          });
+        });
+    //]]>
+      </script>
+      <{ /if}>
+
+    </section>
+  <{/if}>
+  <!-- End com-kv-area-wrap-bg -->
+  <div id="lay-container">
+    <div class="mod-clearfix lay-container-inner">
+      <main id="lay-main">
+        <{include file = $file_name}>
+      </main>
+    </div>
+  </div>
+
+<{else}>
+
+  <!-- 下階層ページ -->
+  <div class="side-nav-active">
+    <section class="com-kv-area-wrap-bg" >
+      <div class="com-page-title-wrap">
+        <div class="text-box">
+          <p class="sub-title"></p>
+          <p class="text">千茶荘は昭和14年(1939年)茶処・松江の地において創業し、
+            お茶通の松江の人々に愛され80有余年となるブランドです。</p>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="lay-breadcrumbs-list">
+      <ol class="mod-panel-layout">
+        <li class="c-breadcrumbs-list__item">
+          <a class="c-breadcrumbs-list__link" href="<{$home_url}>">TOP</a>
+        </li>
+        <{* 商品一覧 *}>
+        <{if $tpl_name == "product_list"}>
+        <{if $smarty.get.mode != "grp"}>
+        <{if $bid_name != ""}>
+        <li class="c-breadcrumbs-list__item">
+          <a href="<{$bid_link}>">
+            <{$bid_name}>
+          </a>
+        </li>
+        <{/if}>
+        <{if $sid_name != ""}>
+        <li class="c-breadcrumbs-list__item">
+          <a href="<{$sid_link}>">
+            <{$sid_name}>
+          </a>
+        </li>
+        <{/if}>
+        <{else}>
+        <{section name=num loop=$group_breadcrumb}>
+        <li class="c-breadcrumbs-list__item">
+          <a href="<{$group_breadcrumb[num].link_url}>">
+            <{$group_breadcrumb[num].name}>
+          </a>
+        </li>
+        <{/section}>
+        <{/if}>
+        <{/if}>
+        <{* 商品詳細 *}>
+        <{if $tpl_name == "product"}>
+        <{if $bid_name != ""}>
+        <li class="c-breadcrumbs-list__item">
+          <a href="<{$bid_link}>">
+            <{$bid_name}>
+          </a>
+        </li>
+        <{/if}>
+        <{if $sid_name != ""}>
+        <li class="c-breadcrumbs-list__item">
+          <a href="<{$sid_link}>">
+            <{$sid_name}>
+          </a>
+        </li>
+        <{/if}>
+        <{/if}>
+        <{* 商品検索結果 *}>
+        <{if $tpl_name == "product_srh"}>
+        <li class="c-breadcrumbs-list__item">
+          商品検索結果
+        </li>
+        <{/if}>
+        <{* 特定商取引 *}>
+        <{if $tpl_name == "shopkeeper"}>
+        <li class="c-breadcrumbs-list__item">
+          特定商取引法に基づく表記
+        </li>
+        <{/if}>
+        <{* プライバイシーポリシー *}>
+        <{if $tpl_name == "privacy"}>
+        <li class="c-breadcrumbs-list__item">
+          プライバシーポリシー
+        </li>
+        <{/if}>
+        <{if $tpl_name|truncate:4:"" == "free"}>
+        <li class="c-breadcrumbs-list__item">
+          <{$current_freepage_title}>
+        </li>
+        <{/if}>
+      </ol>
+    </div>
+    <!-- End .lay-breadcrumbs-list  -->
+    <!-- <{* 売れ筋商品 *}>
+    <{if $seller_num != 0}>
+      <div class="side-nav-active-title pc-only">
+
+        <h2 class="head-title">
+          <span class="text">今月</span>
+        </h2>
+        <ul class="ranking side-nav-active-title__slider js-slick-slider-banner pc-only">
+
+          <{section name=num loop=$seller}>
+          <li class="rank-count rank-<{$smarty.section.num.index_next}>">
+            <a href="<{$seller[num].link_url}>">
+              <{if $seller[num].img_url != ""}>
+              <img src="<{$seller[num].img_url}>" alt="<{$seller[num].name|escape:'html'}>" />
+              <{else}>
+              <img src="https://img.shop-pro.jp/tmpl_img/88/no-image.jpg" alt="<{$seller[num].name|escape:'html'}>" />
+              <{/if}>
+
+              <div class="p-ranking-list__txt">
+                <{if !$seller[num].soldout_flg}>
+                <{* 通常販売価格（ログイン時、通常販売価格と会員価格が異なる場合のみ） *}>
+                <{if $members_login_flg && $seller[num].discount_flg}>
+                <div class="c-item-list__price is-default u-strikethrough">
+                  <{$seller[num].regular_price}>
+                </div>
+                <{/if}>
+                <div class="c-item-list__price<{if $members_login_flg && $seller[num].discount_flg}> is-discount<{/if}>">
+                  <{* 販売価格（ログイン時は会員価格） *}>
+                  <{$seller[num].price}>
+                  <{* 割引率（ログイン時、通常販売価格と会員価格が異なる場合のみ） *}>
+                  <{if $members_login_flg && $seller[num].discount_flg}>
+                  <span class="c-item-list__off"><{$seller[num].discount_rate}>OFF</span>
+                  <{/if}>
+                </div>
+                <{else}>
+                <{* 売り切れの表記 *}>
+                <div class="c-item-list__price">
+                  <{$seller[num].regular_price}> <span class="c-item-list__soldout">売り切れ</span>
+                </div>
+                <{/if}>
+              </div>
+            </a>
+          </li>
+
+          <{/section}>
+        </ul>
+      </div>
+    <{/if}>
+    <{* // 売れ筋商品 *}> -->
+
+    <div id="lay-container">
+      <div class="mod-clearfix lay-container-inner">
+
+        <div class="lay-side-nav">
+          <div class="lay-side-nav-inner">
+
+              <!-- <h2 class="com-title-M-small mgt30">
+                会員特典
+              </h2> -->
+              <ul class="side-nav-baner">
+                <li>
+                  <{if $members_login_flg}>
+                    <!-- <a href="?mode=f3">
+                      <img src="https://cloud.senchasou.online/ectheme/theme03/img/common/member-tokuten-01.png" alt="">
+                      <span>クーポン利用方法</span>
+                    </a> -->
+                  <{else}>
+                  <!-- <a href="?mode=f3">
+                    <img src="https://cloud.senchasou.online/ectheme/theme03/img/common/member-tokuten-non-member.png" alt="">
+                    <span>クーポン利用方法</span>
+                  </a> -->
+                  <{/if}>
+                </li>
+              </ul>
+
+            <!-- サイド下部バナー -->
+            <ul class="side-nav-baner">
+              <{section name=topSlideImage start=1 loop=2}>
+              <li>
+                <a href="/?mode=grp&gid=2870742">
+                  <img src="https://cloud.senchasou.online/ectheme/theme03/img/f7/side-navi-summer.png" alt="">
+                </a>
+              </li>
+              <{/section}>
+            </ul>
+            <!-- // サイド下部バナー -->
+
+
+            <!-- // 今週のおすすめ商品 -->
+            <h2 class="com-title-M-small mgt30">
+              お中元ギフト
+            </h2>
+            <ul class="side-nav-baner">
+              <li>
+                <a href="?pid=175480787">
+                  <img src="https://img21.shop-pro.jp/PA01484/764/product/175480787.png?cmsp_timestamp=20221204002109" alt="「千茶荘」の銘茶と 「御菓子司」の和菓子 の詰合せ">
+                </a>
+                <span class="cs-title">「千茶荘」の銘茶と 「御菓子司」の和菓子 の詰合せ</span>
+                <span class="cs-price">2,473円(税込)</span>
+              </li>
+              <li>
+                <a href="?pid=174978679">
+                  <img src="https://img21.shop-pro.jp/PA01484/764/product/174978679.png?cmsp_timestamp=20221204002109"
+                    alt="千茶荘 夏の三味爽涼ティーバッグ">
+                </a>
+                <span class="cs-title">千茶荘 夏の三味爽涼ティーバッグ</span>
+                <span class="cs-price">2,278円(税込)</span>
+              </li>
+            </ul>
+            <h2 class="com-title-M-small mgt30">
+              今週のおすすめ商品
+            </h2>
+            <ul class="side-nav-baner">
+              <li>
+                <a href="?pid=169456523">
+                  <img src="https://img21.shop-pro.jp/PA01484/764/product/169456523.png?cmsp_timestamp=20221204002109" alt="季節のおすすめ商品">
+                </a>
+                <span class="cs-title">千茶荘 抹茶入り 水出し煎茶 100g</span>
+                <span class="cs-price">1,134円(税込)</span>
+              </li>
+              <li>
+                <a href="?pid=169511220">
+                  <img src="https://img21.shop-pro.jp/PA01484/764/product/169511220.png?cmsp_timestamp=20221204002109" alt="千茶荘 特上グリーンティー 150g">
+                </a>
+                <span class="cs-title">千茶荘 特上グリーンティー 150g</span>
+                <span class="cs-price">356円(税込)</span>
+              </li>
+            </ul>
+            <!-- // 今週のおすすめ商品 -->
+
+            <h2 class="com-title-L-small mgt30">
+              用途から選ぶ
+            </h2>
+            <ul class="side-nav-list">
+              <{section name=num loop=$group}>
+                <li>
+                  <a href="<{$group[num].link_url}>">
+                    <{$group[num].name}>
+                  </a>
+                </li>
+              <{/section}>
+            </ul>
+            <!-- // グループ -->
+
+            <{if $category|@count != 0}>
+              <h2 class="com-title-L-small mgt30">
+                カテゴリーから選ぶ
+              </h2>
+
+              <ul class="side-nav-list">
+                <{foreach from=$category item=cate name=cate}>
+                <li class="l-side-navi-list__item">
+                  <{if $subcategory[$cate.bid]}>
+                    <a href="javascript:void(0);" class="side-child-accordion active">
+                      <span><{$cate.name}></span>
+                    </a>
+                    <div class="accordion-target" style="display: block;">
+                      <{foreach from=$subcategory[$cate.bid] item=scate name=scate}>
+                      <{if $smarty.foreach.scate.first}>
+                      <ul class="">
+                        <li class="l-side-navi-sub-list__item">
+                          <a href="<{$cate.link_url}>" class="l-side-navi-sub-list__link">
+                            全ての<{$cate.name}>
+                          </a>
+                        </li>
+                        <{/if}>
+                        <li class="l-side-navi-sub-list__item">
+                          <a href="<{$scate.link_url}>" class="l-side-navi-sub-list__link">
+                            <{$scate.name}>
+                          </a>
+                        </li>
+                        <{if $smarty.foreach.scate.last}>
+                      </ul>
+                      <{/if}>
+                      <{/foreach}>
+                    </div>
+                  <{else}>
+                  <a class="l-side-navi-list__link is-link" href="<{$cate.link_url}>">
+                    <{$cate.name}>
+                  </a>
+                  <{/if}>
+                </li>
+                <{/foreach}>
+              </ul>
+            <{/if}>
+
+            <{if $freepage|@count != 0}>
+            <h2 class="com-title-L-small mgt30">
+              コンテンツ
+            </h2>
+            <ul >
+              <{section name=num loop=$freepage}>
+              <li>
+                <a href="<{$freepage[num].link_url}>">
+                  <{$freepage[num].page_title}>
+                </a>
+              </li>
+              <{/section}>
+            </ul>
+            <{/if}>
+            <!-- コンテンツ -->
+
+            <{if $calendar != ""}>
+              <div class="side_section side_section_cal mgt30">
+                <div class="side_cal">
+                  <p class="calendar-title">
+                    営業カレンダー
+                    <span class="sub-info">
+                      ※ 赤字･･･休業日
+                    </span>
+                  </p>
+                  <{$calendar}>
+                </div>
+                <{if $calendar_memo != ""}>
+                  <div class="side_cal_memo">
+                    <{$calendar_memo}>
+                  </div>
+                <{/if}>
+              </div>
+            <{/if}>
+
+          </div>
+        </div>
+        <!-- End .lay-side-nav -->
+
+        <main id="lay-main">
+          <section>
+            <div class="com-section-inner">
+              <{include file = $file_name}>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+  </div>
+<{/if}>
+
+<div class="lay-page-top-wrap">
+  <a href="#" class="lay-page-top">
+    <span>TOPへ</span>
+  </a>
+</div>
+<!-- End .lay-page-top-wrap -->
+<footer id="lay-footer">
+  <div class="lay-footer-info">
+    <div class="lay-footer-info-inner">
+      <ul class="mod-panel-layout">
+        <li class="mail-wrap">
+          <div class="footer-inner">
+            <p class="title">メールでのお問い合わせ</p>
+            <p class="text">サービスなどご不明な点がありましたら、<br class="pc-only">お気軽にご連絡ください。</p>
+            <p class="btn">
+              <a href="<{$view_inq_url}>">
+                <span>お問い合わせ</span>
+              </a>
+            </p>
+          </div>
+        </li>
+        <li class="tel-wrap">
+          <div class="footer-inner">
+            <p class="title">お電話でのお問い合わせ</p>
+            <p class="text">サービスなどご不明な点がありましたら、<br class="pc-only">お気軽にご連絡ください。</p>
+            <p class="tel">
+              <a href="tel:0120280827" class="sp-link">0120-280-827</a>
+            </p>
+            <p class="info">
+              受付時間 / 09:00&#12316;17:30<br>
+              定休日（土日・GW・お盆・正月定休）
+            </p>
+          </div>
+        </li>
+        <li class="calendar-wrap">
+          <{if $calendar != ""}>
+            <div class="side_section side_section_cal">
+              <div class="side_cal">
+                <p class="calendar-title">
+                  営業カレンダー
+                  <span class="sub-info">
+                    ※ 赤字･･･休業日
+                  </span>
+                </p>
+                <{$calendar}>
+              </div>
+              <{if $calendar_memo != ""}>
+                <div class="side_cal_memo">
+                  <{$calendar_memo}>
+                </div>
+              <{/if}>
+            </div>
+
+          <{/if}>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lay-footer-main-nav">
+    <div class="lay-footer-main-nav-inner">
+      <nav class="mod-panel-layout">
+        <ul>
+          <li><a href="<{$sk_url}>">配送・送料について</a></li>
+          <li><a href="<{$sk_url}>#return">返品について</a></li>
+        </ul>
+        <ul>
+          <li><a href="<{$sk_url}>#info">特定商取引法に基づく表記</a></li>
+          <li><a href="<{$privacy_url}>">プライバシーポリシー</a></li>
+        </ul>
+        <ul>
+          <li><a href="<{$sk_url}>#payment">お支払い方法について</a></li>
+          <li><a href="<{$view_inq_url}>">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="lay-footer-sub-nav">
+    <div class="lay-footer-sub-nav-inner">
+      <p id="lay-copy-right"><{$e_copyright}></p>
+    </div>
+  </div>
+
+</footer>
+
+<script src="https://cloud.senchasou.online/ectheme/theme03/js/jquery.min.js" data-no-defer=""></script>
+<script type="text/javascript" src="https://cloud.senchasou.online/ectheme/theme03/js/slick.min.js"></script>
+<script src="https://cloud.senchasou.online/ectheme/theme01/assets/jsFolder/matchHeight.js"></script>
+<script src="https://cloud.senchasou.online/ectheme/theme01/assets/jsFolder/bxslider.js"></script>
+<script src="https://cloud.senchasou.online/ectheme/theme03/js/theme.js"></script>
+<script src="https://cloud.senchasou.online/ectheme/theme03/js/common.js"></script>
+<script src="https://cloud.senchasou.online/ectheme/theme03/js/scripts.js"></script>
+
+<script src="https://cloud.senchasou.online/ectheme/theme01/assets/jsFolder/ua.js"></script>
+
+<{else}>
+  <{include file=$file_name}>
+<{ /if}>
