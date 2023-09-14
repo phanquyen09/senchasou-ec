@@ -395,27 +395,36 @@
 <{if $tpl_name == "top" || $tpl_name == "free5" || $tpl_name == "free7" || $tpl_name == "free1"}>
   <{if $tpl_name == "top" || $tpl_name == "free1"}>
   <section class="com-kv-area-wrap-bg">
-    <{if $slideshow_html}>
-      <div class="slider">
-        <{$slideshow_html}>
+    <div class="com-page-title-wrap">
+      <div class="slider-top-kv js-slick-slider-top-kv">
+        <div class="slide-item">
+          <a href="#ranking">
+            <img src="https://cloud.senchasou.online/ectheme/theme03/img/top/slider/summer-01.png" alt="">
+          </a>
+        </div>
+        <div class="slide-item">
+          <a href="https://senchasou-online.com/?pid=169456523">
+            <img src="https://cloud.senchasou.online/ectheme/theme03/img/top/slider/summer-02.png" alt="">
+          </a>
+        </div>
+        <div class="slide-item">
+          <a href="https://senchasou-online.com/?pid=169511220">
+            <img src="https://cloud.senchasou.online/ectheme/theme03/img/top/slider/summer-03.png" alt="">
+          </a>
+        </div>
+        <div class="slide-item">
+          <a href="https://senchasou-online.com/?mode=grp&gid=2882512">
+            <img src="https://cloud.senchasou.online/ectheme/theme03/img/top/slider/summer-04.png" alt="">
+          </a>
+        </div>
+        <div class="slide-item">
+          <a href="https://senchasou-online.com/?mode=grp&gid=2882515">
+            <img src="https://cloud.senchasou.online/ectheme/theme03/img/top/slider/summer-05.png" alt="">
+          </a>
+        </div>
       </div>
-      <script type="text/javascript">
-        //<![CDATA[
-        $(function () {
-          $('#slider').bxSlider({
-            auto: true,
-            pause: 2000,
-            speed: 1000,
-            controls: false,
-            mode: 'fade',
-            pager: false
-          });
-        });
-    //]]>
-      </script>
-      <{ /if}>
-
-    </section>
+    </div>
+  </section>
   <{/if}>
   <!-- End com-kv-area-wrap-bg -->
   <div id="lay-container">
@@ -516,80 +525,12 @@
       </ol>
     </div>
     <!-- End .lay-breadcrumbs-list  -->
-    <!-- <{* 売れ筋商品 *}>
-    <{if $seller_num != 0}>
-      <div class="side-nav-active-title pc-only">
-
-        <h2 class="head-title">
-          <span class="text">今月</span>
-        </h2>
-        <ul class="ranking side-nav-active-title__slider js-slick-slider-banner pc-only">
-
-          <{section name=num loop=$seller}>
-          <li class="rank-count rank-<{$smarty.section.num.index_next}>">
-            <a href="<{$seller[num].link_url}>">
-              <{if $seller[num].img_url != ""}>
-              <img src="<{$seller[num].img_url}>" alt="<{$seller[num].name|escape:'html'}>" />
-              <{else}>
-              <img src="https://img.shop-pro.jp/tmpl_img/88/no-image.jpg" alt="<{$seller[num].name|escape:'html'}>" />
-              <{/if}>
-
-              <div class="p-ranking-list__txt">
-                <{if !$seller[num].soldout_flg}>
-                <{* 通常販売価格（ログイン時、通常販売価格と会員価格が異なる場合のみ） *}>
-                <{if $members_login_flg && $seller[num].discount_flg}>
-                <div class="c-item-list__price is-default u-strikethrough">
-                  <{$seller[num].regular_price}>
-                </div>
-                <{/if}>
-                <div class="c-item-list__price<{if $members_login_flg && $seller[num].discount_flg}> is-discount<{/if}>">
-                  <{* 販売価格（ログイン時は会員価格） *}>
-                  <{$seller[num].price}>
-                  <{* 割引率（ログイン時、通常販売価格と会員価格が異なる場合のみ） *}>
-                  <{if $members_login_flg && $seller[num].discount_flg}>
-                  <span class="c-item-list__off"><{$seller[num].discount_rate}>OFF</span>
-                  <{/if}>
-                </div>
-                <{else}>
-                <{* 売り切れの表記 *}>
-                <div class="c-item-list__price">
-                  <{$seller[num].regular_price}> <span class="c-item-list__soldout">売り切れ</span>
-                </div>
-                <{/if}>
-              </div>
-            </a>
-          </li>
-
-          <{/section}>
-        </ul>
-      </div>
-    <{/if}>
-    <{* // 売れ筋商品 *}> -->
 
     <div id="lay-container">
       <div class="mod-clearfix lay-container-inner">
 
         <div class="lay-side-nav">
           <div class="lay-side-nav-inner">
-
-              <!-- <h2 class="com-title-M-small mgt30">
-                会員特典
-              </h2> -->
-              <ul class="side-nav-baner">
-                <li>
-                  <{if $members_login_flg}>
-                    <!-- <a href="?mode=f3">
-                      <img src="https://cloud.senchasou.online/ectheme/theme03/img/common/member-tokuten-01.png" alt="">
-                      <span>クーポン利用方法</span>
-                    </a> -->
-                  <{else}>
-                  <!-- <a href="?mode=f3">
-                    <img src="https://cloud.senchasou.online/ectheme/theme03/img/common/member-tokuten-non-member.png" alt="">
-                    <span>クーポン利用方法</span>
-                  </a> -->
-                  <{/if}>
-                </li>
-              </ul>
 
             <!-- サイド下部バナー -->
             <ul class="side-nav-baner">
@@ -606,7 +547,7 @@
 
             <!-- // 今週のおすすめ商品 -->
             <h2 class="com-title-M-small mgt30">
-              お中元ギフト
+              お茶 元ギフト
             </h2>
             <ul class="side-nav-baner">
               <li>
