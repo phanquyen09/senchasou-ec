@@ -133,6 +133,33 @@
     </div>
   </div>
 </section>
+<{if $push_num != 0}>
+<ul class="product">
+  <{section name=num loop=$push}>
+    <li>
+      <a href="<{$push[num].link_url}>">
+        <{if $push[num].img_url != ""}>
+          <img src="<{$push[num].img_url}>" />
+        <{else}>
+          <{* この行を消して商品画像が登録されていない場合に表示する画像やタグを入れる *}>
+        <{/if}>
+        <{$push[num].name}>
+      </a>
+      <{if $push[num].s_expl <> ""}><span class="exp"><{$push[num].s_expl}></span><{/if}>
+      <{if $members_login_flg == true && $push[num].discount_flg == true}><span class="regular"><{$push[num].regular_price}></span><{/if}>
+      <{if $push[num].soldout_flg == true}>
+        <span class="soldout">SOLD OUT</span>
+      <{else}>
+        <span class="price">
+          <{$push[num].price}>
+          <{if $members_login_flg == true && $push[num].discount_flg == true}><{$push[num].discount_rate}>OFF!!<{/if}>
+        </span>
+      <{/if}>
+    </li>
+  <{/section}>
+</ul>
+<{/if}>
+
 
 <!-- バナー -->
 <div class="com-section-inner">
@@ -174,6 +201,50 @@
 <{ /section}>
 </div>
 </div>
+
+<!-- 新着情報 -->
+<{if $new_item_num != 0}>
+<div class="p-pickup">
+  <div class="com-section-inner">
+    <h2 class="c-tit1 u-serif">
+      PICK UP ITEMS
+    </h2>
+    <ul class="p-pickup-list u-opa">
+      <{section name=num loop=$new_item}>
+      <li class="p-pickup-list__item">
+        <div class="p-pickup-list__img fadeIn fromLeft faded fadedWithTransform">
+          <a href="<{$new_item[num].link_url}>">
+            <{if $new_item[num].img_url != ""}>
+                <img src="<{$new_item[num].img_url}>" />
+            <{else}>
+              <{* この行を消して商品画像が登録されていない場合に表示する画像やタグを入れる *}>
+            <{/if}>
+          </a>
+        </div>
+        <div class="p-pickup-list__txt">
+          <h3 class="p-pickup-list__ttl">
+            <{$new_item[num].name}>
+          </h3>
+          <p class="p-pickup-list__body">
+            <{if $members_login_flg == true && $new_item[num].discount_flg == true}>
+              <{if $members_login_flg == true && $new_item[num].discount_flg == true}>
+                <span class="regular"><{$new_item[num].regular_price}></span>
+              <{/if}>
+            <{/if}>
+            <span class="price"><{$new_item[num].price}><{if $members_login_flg == true && $new_item[num].discount_flg == true}><{$new_item[num].discount_rate}>OFF!!<{/if}></span>
+          </p>
+          <div class="p-pickup-list__btn">
+            <a href="<{$new_item[num].link_url}>" class="c-btn">
+              MORE
+            </a>
+          </div>
+        </div>
+      </li>
+      <{/section}>
+    </ul>
+  </div>
+</div>
+<{/if}>
 
 
 <!-- ＊＊＊＊＊＊＊ ランキングエリアここから ＊＊＊＊＊＊＊-->
@@ -448,6 +519,7 @@
   </section>
 
 </div>
+
 <section class="p-pickup">
   <div class="com-section-inner">
     <h2 class="c-tit1 u-serif">売れ筋ランキング</h2>
@@ -481,3 +553,4 @@
 
   </div>
 </section>
+<script src="https://img.shop-pro.jp/tmpl_js/87/scroll-animation.js"></script>
