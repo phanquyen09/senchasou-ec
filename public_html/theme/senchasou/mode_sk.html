@@ -48,7 +48,13 @@
           <{if $sk_payment[num].card_img != "" }>
             <{$sk_payment[num].card_img}><br />
           <{/if}>
-            <{$sk_payment[num].other}>&nbsp;
+          <{if $smarty.section.num.index == "1" }>
+            <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_familymart.svg">
+            <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_lawson.svg">
+            <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_ministop.svg">
+            <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_seven.svg"><br />
+          <{/if}>
+          <{$sk_payment[num].other}>&nbsp;
         </div>
       </div>
       <{/section}>

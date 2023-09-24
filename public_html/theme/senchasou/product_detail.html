@@ -269,16 +269,23 @@
                 <p>メール便：全国一律 203円</p>
               <{/if}>
               <p>ゆうパック：650円&#12316; 。送料表は<a href="<{$delivery_url}>">こちら</a>です。</p>
-              <p>お支払い方法：
+              <p>お支払い方法：<br>
                 <{section name=num loop=$sk_payment}>
                   <{$sk_payment[num].name}><br>
                   <{if $sk_payment[num].img_url != "" }>
                     <img src="<{$sk_payment[num].img_url}>"><br />
                   <{/if}>
+                  <{if $smarty.section.num.index == "1" }>
+                    <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_familymart.svg">
+                    <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_lawson.svg">
+                    <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_ministop.svg">
+                    <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_seven.svg">
+                    <img class="payment_img" src="https://cloud.senchasou.online/ectheme/theme03/img/common/logo_seicomart.png"><br />
+                  <{/if}>
                   <{if $sk_payment[num].card_img != "" }>
                     <{$sk_payment[num].card_img}><br />
                   <{/if}>
-                  <{$sk_payment[num].other}>&nbsp;
+                  <!-- <{$sk_payment[num].other}>&nbsp; -->
                 <{/section}>
               </p>
             </div>
